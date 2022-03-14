@@ -21,8 +21,8 @@ export default function NavBar() {
 
   useEffect(() => {
     axios.get(baseURL).then((response) => {
-      console.log("Navbar");
-      console.log(JSON.stringify(response.data.data.attributes.Nav));
+      // console.log("Navbar");
+      // console.log(JSON.stringify(response.data.data.attributes.Nav));
       // console.log(JSON.stringify(response.data.data.attributes.Content[1].Variant));
       setPost(response.data.data.attributes.Nav);
       // console.log(Object.keys(response.data.data.attributes));
@@ -32,24 +32,30 @@ export default function NavBar() {
   }, []);
 
   if (!post){
-    // console.log("djhgk");
+    // 
     return null;
   } 
 
   const image = "http://localhost:1337"+post[0].Logo.data.attributes.url;
+  const data = post[0].Link_Item
+  // var dropDownArray = new Array(no_of_items).fill(false);
+  // console.log("Navvvvvvv");
+  // console.log(no_of_items);
+  // console.log();
+
+
   return (
     <div className={Style.wrapper}>
       <div className={Style.container}>
         <Link to={`/`}>
           <div className={Style.leftContainer}>
-            {console.log(post[0].Logo.data.attributes.url)}
+            {/* {console.log(post[0].Logo.data.attributes.url)} */}
             <img src={image}/>
           </div>
         </Link>
-        
         <div className={ `${Style.rightContainer} ${sideBarFlag ? Style.show : Style.hide }`}>
           {
-            data.map((value , key) => {
+            post[0].Link_Item.map((value , key) => {
               return (
                 <div>
                   <div className={Style.content} 
@@ -58,10 +64,10 @@ export default function NavBar() {
                       value.status = !dropdown;
                     }}
                     >
-                    <div>{value.title}</div>
+                    <div>{value.Heading}</div>
                     <div><FiChevronDown/></div>
                   </div>
-                  <div>{value.status && <DropDown content = {value.content}/>}</div>
+                  <div>{value.status && <DropDown content = {value.Sub_Link}/>}</div>
                 </div>
               )
             })

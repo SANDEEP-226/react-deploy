@@ -26,7 +26,7 @@ export default function TwoColumn({id}) {
     }, []);
   
     if (!post) return null;
-    console.log(post.Cards);
+    // console.log(post.Cards);
 
     return (
     <div className={`${Style.row} ${root.md_col_11} ${root.sm_col_10} ${root.tb_col_10} ${root.col_10}  ${root.l_col_11}`}>
@@ -56,17 +56,7 @@ export default function TwoColumn({id}) {
   export  function TwoColumnContent( { data } ){
     return(
         <div className={Style.TwoColumnContentContainer}>
-            <div className={Style.TwoTitle}>
-                <h3>Why You Should Visit </h3>
-            </div>
-            <div className={Style.info}>
-                <ul>
-                    <li>May marks the beginning of the off-season in Dubai as the peak tourist season begins to die down and the crowds' retreat, leaving the citys popular attractions relatively less packed and open for convenient exploration.</li>
-                    <li>This means that you can avail some great deals on even high-end hotels during May since prices usually drop as temperatures begin to rise and the tourists stop pouring into the city around this time of the year. </li>
-                    <li>Since Eid al Fitr is set to take place on May 1st this year, it will be a great opportunity to taste the traditional delicacies and experience the charm of Dubais cultural roots.</li>
-                    <li>If you plan to spend your time shopping inside the air-conditioned malls, or “wining and dining” in the city’s finest restaurants - this is the best time of year to visit and avoid the heated outdoors.</li>
-                </ul>
-            </div>
+            <ReactMarkdown>{data}</ReactMarkdown>
         </div>
     )
   }

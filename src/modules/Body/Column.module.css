@@ -14,7 +14,7 @@
 .columnContainer{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -30,7 +30,7 @@
 }
 .TwoColumnContentContainer{
     display: block;
-    padding: 0rem 1rem 0rem;
+    padding: 0rem 1rem 1rem 1rem;
     font-family: sans-serif;
 }
 .TwoColumnContentContainer ul{
@@ -66,6 +66,10 @@
 }
 .info{
     color: black;
+}
+.TwoColumnContentContainer{
+    color: black;
+    min-height: 460px;
 }
 
 
