@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from "axios"
+import ReactMarkdown from "react-markdown"
 import Style from "./../../modules/Body/Column.module.css"
 import root from "../../modules/responsive.module.css"
 import Card from "./Card"
@@ -45,10 +46,11 @@ export default function ThreeColumn({id}) {
   )
 }
 
-export function ThreeColumnContent(){
+export function ThreeColumnContent({ data }){
     return(
         <div className={Style.ThreeColumnContentContainer}>
-            <div className={Style.ThreeTitle}>
+            <ReactMarkdown>{data}</ReactMarkdown>
+            {/* <div className={Style.ThreeTitle}>
                 <h3>Why You Should Visit </h3>
             </div>
             <div className={Style.ThreeDesc}>
@@ -60,7 +62,7 @@ export function ThreeColumnContent(){
                 <br/>
                 <b>May Timings:</b> 7 AM to 7 PM
                 <br/><br/>
-            </div>
+            </div> */}
         </div>
     )
 }

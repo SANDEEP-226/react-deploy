@@ -65,9 +65,9 @@ export default function NavBar() {
                     }}
                     >
                     <div>{value.Heading}</div>
-                    <div><FiChevronDown/></div>
+                    <div>{value.Sub_Link.length > 0 ? <FiChevronDown/> : ""}</div>
                   </div>
-                  <div>{value.status && <DropDown content = {value.Sub_Link}/>}</div>
+                  <div>{value.status && value.Sub_Link.length > 0  && <DropDown content = {value.Sub_Link}/>}</div>
                 </div>
               )
             })

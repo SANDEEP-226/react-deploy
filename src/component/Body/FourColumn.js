@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import ReactMarkdown from 'react-markdown'
 import Style from "./../../modules/Body/Column.module.css"
 import root from "../../modules/responsive.module.css"
 import data from "./../../Json/ColumnCotent.json"
@@ -54,12 +55,9 @@ export default function FourColumn({id}) {
 export function FourColumnContent( { data } ){
   return(
       <div className={Style.FourColumnContentContainer}>
-          <div>
-            <b>{data.title}</b>
-          </div>
-          <div>
-            <b>AED {data.Cost}</b>
-          </div>
+          <ReactMarkdown>
+            {data}
+          </ReactMarkdown>
       </div>
   )
 }
