@@ -1,5 +1,6 @@
 import React from 'react'
 import Style from "./../../modules/Body/FeatureCard.module.css"
+import ReactMarkdown from "react-markdown"
 // import img from "../../assets/Ban4.jpeg"
 import axios from 'axios'
 
@@ -41,8 +42,8 @@ export default function FeatureCard({ id }) {
                 <img src={img} />
             </div>
             <div className={Style.contentContainer}>
-                
-                With the lengthening days and rising temperature, Dubai grows hotter in May as it experiences summer. Days are as long as 13 hours with about 11 hours of sunshine.
+                <ReactMarkdown>{post.Content}</ReactMarkdown>
+                {/* With the lengthening days and rising temperature, Dubai grows hotter in May as it experiences summer. Days are as long as 13 hours with about 11 hours of sunshine.
                 <br></br>
                 <br></br>
                 <b>Average Temperature:</b> High- 37°C | Low- 23°C
@@ -53,7 +54,7 @@ export default function FeatureCard({ id }) {
                 <br></br>
 
                 <b>Temperature of the Sea:</b> 26°C to 30°C
-            
+             */}
             </div>
         </div>
     </div>
