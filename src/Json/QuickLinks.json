@@ -1,0 +1,53 @@
+[
+    {   
+        "id":1,
+        "category":"Visit Nurj Khalifa",
+        "tags":[
+            "Burj Khalifa","Dubai Frame","Dubai Dolphinarium","Dubai Aquarium","Dubai Aquarium"
+        ]
+    },
+    {   
+        "id":2,
+        "category":"Desert Adventure",
+        "tags":[
+            "Evening Desert Safari",
+            "Morning Desert Safari",
+            "Camel Rides in Dubai",
+            "Quad Biking"
+        ]
+    },
+    {   
+        "id":1,
+        "category":"Visit Nurj Khalifa",
+        "tags":[
+            "Burj Khalifa","Dubai Frame","Dubai Dolphinarium","Dubai Aquarium","Dubai Aquarium"
+        ]
+    },
+    {   
+        "id":2,
+        "category":"Desert Adventure",
+        "tags":[
+            "Evening Desert Safari",
+            "Morning Desert Safari",
+            "Camel Rides in Dubai",
+            "Quad Biking"
+        ]
+    },
+    {   
+        "id":1,
+        "category":"Visit Nurj Khalifa",
+        "tags":[
+            "Burj Khalifa","Dubai Frame","Dubai Dolphinarium","Dubai Aquarium","Dubai Aquarium"
+        ]
+    },
+    {   
+        "id":2,
+        "category":"Desert Adventure",
+        "tags":[
+            "Evening Desert Safari",
+            "Morning Desert Safari",
+            "Camel Rides in Dubai",
+            "Quad Biking"
+        ]
+    }
+]

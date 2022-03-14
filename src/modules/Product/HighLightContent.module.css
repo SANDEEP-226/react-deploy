@@ -1,0 +1,104 @@
+.wrapper{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 40px 0px; 
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content img {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+} 
+/* .contentWrapper{
+    line-height: 18rem;
+} */
+.contextContent{
+    font-family: soleil, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.05rem;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+    padding-bottom: 0.2rem;
+}
+.descriptionContent{
+    font-family: soleil, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 15px;
+    color: rgb(68, 68, 68);
+}
+
+
+
+
+@media only screen and (min-width: 1441px) {
+    /* Large Size Devices */
+    .content{
+        width: 20%;
+        padding: 15px 0px;
+    }
+
+
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+/* Default size devices */
+    .content{
+        width: 24%;
+        padding: 15px 0px;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    /* Tablet size devices */
+    .content{
+        padding: 15px 0px;
+        width: 47%;
+    }
+
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    /* Medium size devices */
+    .content{
+        padding: 15px 0px;
+        width: 50%;
+    }
+    .contextContent{
+        font-size: 0.85rem;
+    }
+    .descriptionContent{
+        font-size: 0.75rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 425px) {
+    /* Small devices */
+    
+    .content{
+        padding: 13px 0px;
+        width: 50%;
+
+    }
+    .content img {
+        width: 32px;
+        height: 32px;
+        padding-right: 10px;
+        
+    } 
+    .contextContent{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .descriptionContent{
+        font-size: 0.7rem;
+    }
+
+}

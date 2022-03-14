@@ -1,0 +1,66 @@
+{
+    "Feature":[
+        {
+            "CardId" :1,
+            "FeatureName" : "Travel Essentials",
+            "FeatureTitle":"",
+            "Description":"",
+            "imageUrl":"",
+            "content":[
+                " Time Zone: GMT +4 ","Currency: Arab Emirate Dirham (AED)","Country code: +971","Emergency numbers: 999 (Police), 998 (Ambulance), 997 (Fire Department)"
+            ]
+
+        },
+        {
+            "CardId" :2,
+            "FeatureName" : "What to Wear",
+            "FeatureTitle":"What to Wear in Dubai in May",
+            "Description":"",
+            "imageUrl":"",
+            "content":[
+                "Given that the weather in Dubai during May can be quite sunny and warm, it is best to dress in light, airy clothes made out of breathable fabrics like cotton and linen","Protective accessories like sunglasses and hats will go a long way in keeping you (and your outfits) cool! ","If you’re planning on heading out for desert safaris, be sure to wear a scarf or cap to keep the sand and wind out of your hair"
+            ]
+
+        },{
+            "CardId" :3,
+            "FeatureName" : "Travel Essentials",
+            "FeatureTitle":"",
+            "Description":"",
+            "imageUrl":"",
+            "content":[
+                "Time Zone: GMT +4","Currency: Arab Emirate Dirham (AED)","Country code: +971","Emergency numbers: 999 (Police), 998 (Ambulance), 997 (Fire Department)"
+            ]
+
+        },{
+            "CardId" :4,
+            "FeatureName" : "Travel Essentials",
+            "FeatureTitle":"",
+            "Description":"",
+            "imageUrl":"",
+            "content":[
+                "Time Zone: GMT +4","Currency: Arab Emirate Dirham (AED)","Country code: +971","Emergency numbers: 999 (Police), 998 (Ambulance), 997 (Fire Department)"
+            ]
+
+        },{
+            "CardId" :5,
+            "FeatureName" : "Travel Essentials",
+            "FeatureTitle":"",
+            "Description":"",
+            "imageUrl":"",
+            "content":[
+                "Time Zone: GMT +4","Currency: Arab Emirate Dirham (AED)","Country code: +971","Emergency numbers: 999 (Police), 998 (Ambulance), 997 (Fire Department)"
+            ]
+
+        },{
+            "CardId" :6,
+            "FeatureName" : "Travel Essentials",
+            "FeatureTitle":"",
+            "Description":"",
+            "imageUrl":"",
+            "content":[
+                "Time Zone: GMT +4","Currency: Arab Emirate Dirham (AED)","Country code: +971","Emergency numbers: 999 (Police), 998 (Ambulance), 997 (Fire Department)"
+            ]
+
+        }
+    ]
+}

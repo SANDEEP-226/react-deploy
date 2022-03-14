@@ -1,0 +1,264 @@
+.row{
+    /* width:85%; */
+    /* background-color: aqua; */
+}
+.rowTitle h2{
+    font-size: 24px;
+    color: #444444;
+}
+.rowDesc{
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 1.4rem;
+}
+.columnContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.TwoColumn{
+    width: 48%;
+    /* background-color: antiquewhite; */
+}
+.TwoTitle h3{
+    font-size: 1.4rem;
+    color: #545454;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.TwoColumnContentContainer{
+    display: block;
+    padding: 0rem 1rem 0rem;
+    font-family: sans-serif;
+}
+.TwoColumnContentContainer ul{
+    line-height: 1.5rem;
+}
+.ThreeColumn{
+    width: 32%;
+}
+.ThreeTitle h3{
+    font-size: 1.4rem;
+    color: #545454;
+}
+.ThreeColumnContentContainer{
+    display: inline-block;
+    padding: 0rem 1rem  0rem;
+    line-height: 1.3rem;
+    
+}
+
+.FourColumn{
+    width: 24%;
+    min-height: 250px;
+}
+.FourTitle h4{
+    font-size: 1.3rem;
+    color: #545454;
+}
+.FourColumnContentContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem  0.6rem;
+    line-height: 1.3rem;
+}
+.info{
+    color: black;
+}
+
+
+@media only screen and (min-width: 1441px) {
+    /* Large Size Devices */
+  
+    
+  
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+/* Default size devices */
+.info{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    /* Tablet size devices */
+    .rowTitle h2{
+        font-size: 1.3rem;
+        color: #444444;
+    }
+    .rowDesc{
+        font-size: 1rem;
+    }
+    .TwoColumn{
+        width: 48%;
+        /* background-color: antiquewhite; */
+    }
+    
+    .TwoTitle h3{
+        font-size: 1.4rem;
+        color: #545454;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .TwoColumnContentContainer{
+        display: block;
+        font-size: 1rem;
+        padding: 0rem 1rem 0rem;
+        font-family: sans-serif;
+    }
+    .TwoColumnContentContainer ul{
+        line-height: 1.5rem;
+        padding-left: 0.8rem;
+    }
+    
+    .ThreeColumn{
+        width: 32%;
+    }
+    .ThreeTitle h3{
+        font-size: 1.2rem;
+        color: #545454;
+    }
+    .ThreeColumnContentContainer{
+        display: inline-block;
+        padding: 0rem 1rem 0rem;
+    }
+    .ThreeColumnContentContainer{
+        line-height: 1.3rem;
+    }
+     .info{
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+    .FourColumn{
+        width: 24%;
+    }
+    .FourTitle h4{
+        font-size: 1.3rem;
+        color: #545454;
+    }
+    .FourColumnContentContainer{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        padding: 1rem  0.6rem;
+        line-height: 1.3rem;
+    }
+}
+    
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    /* Medium size devices */
+    .rowTitle h2{
+        font-size: 1.2rem;
+        color: #444444;
+    }
+    .rowDesc{
+        font-size: 1rem;
+    }
+
+
+.columnContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.TwoColumn{
+    width: 100%;
+}
+.TwoTitle h3{
+    color: #545454;
+    font-size: 1rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.TwoColumnContentContainer{
+    padding: 0rem 0.6rem 0rem;
+}
+.TwoColumnContentContainer ul{
+    padding-left: 0.9rem;
+}
+.info{
+    font-size: 0.75rem;
+    line-height: 1.4rem;
+}
+.ThreeColumn{
+    width: 100%;
+}
+.ThreeColumnContentContainer{
+    display: inline-block;
+    padding: 8px  8px 0px;
+}
+.ThreeTitle h3{
+    font-size: 1rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.FourColumn{
+    width: 47%;
+}
+.FourTitle h4{
+    font-size: 1.2rem;
+    color: #545454;
+}
+.FourColumnContentContainer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    padding: 1rem  0.6rem;
+    line-height: 1.3rem;
+}
+    
+}
+    
+@media only screen and (max-width: 425px) {
+    /* Small devices */
+
+    
+.rowTitle h2{
+    font-size: 1.2rem;
+    color: #444444;
+}
+.rowDesc{
+    font-size: 0.9rem;
+}
+
+.columnContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.TwoColumn{
+    width: 100%;
+}
+.TwoColumnContentContainer{
+    padding: 0rem 0.6rem 0rem;
+}
+.TwoColumnContentContainer ul{
+    padding-left: 0.9rem;
+}
+.TwoTitle h3{
+    font-size: 0.9rem;
+}
+.ThreeColumn{
+    width: 100%;
+}
+.ThreeColumnContentContainer{
+    display: inline-block;
+    padding: 8px  8px 0px;
+}
+.FourColumn{
+    width: 45%;
+}
+.FourTitle h4{
+    font-size: 1.2rem;
+    color: #545454;
+}
+.FourColumnContentContainer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    padding: 1rem  0.6rem;
+    line-height: 1.3rem;
+}
+
+}

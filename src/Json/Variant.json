@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "title":"Highlights",
+        "content":[
+            "Make your way to the Burj Khalifa and zoom up to the 124th and 125th floors in the world’s fastest elevator.",
+            "The floor-to-ceiling glass walls here will show you Dubai in all its glory - city, desert, sand, and ocean, all at once.",
+            "Stand at a height of 452 meters above ground level and soak in panoramic views of the entire city. Step outside to the open-air terrace to get a better look!",
+            "After your viewing experience, head to the ground floor and drop by The Cafe.",
+            "i am a none"
+        ] 
+    },
+    {
+        "id":2,
+        "title":"Tips & Information",
+        "content":[
+            "No large pieces of luggage are allowed inside, but you can check them in at the Secure Baggage Area, located near the entrance. Handbags, cameras, and other small accessories are allowed inside. However, any photography for commercial or business purposes at the Burj is strictly prohibited.",
+            "The floor-to-ceiling glass walls here will show you Dubai in all its glory - city, desert, sand, and ocean, all at once.",
+            "Stand at a height of 452 meters above ground level and soak in panoramic views of the entire city. Step outside to the open-air terrace to get a better look!"
+        ] 
+    },
+    {
+        "id":3,
+        "title":"Cancellation Policy",
+        "content":[
+            "Get a full refund on canceling this ticket up to 48 hours before the schedule."
+        ] 
+    }
+]

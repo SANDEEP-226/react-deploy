@@ -1,0 +1,80 @@
+.wrapper{
+    width:85%;
+}
+.wrapper h2{
+    font-size: 1.5rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.subHeader{
+    font-size: 1.2rem;
+}
+.para{
+    font-size: 1.1rem;
+}
+.content{
+    border-bottom: 1px solid rgb(226, 226, 226);
+    margin : 0px 24px 0px 0px;
+    padding: 16px 0px;
+}
+.view{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+@media only screen and (min-width: 1441px) {
+    /* Large Size Devices */
+  
+    
+  
+  }
+  @media only screen and (min-width: 1025px) and (max-width: 1440px){
+    /* Default size devices */
+  
+  
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+      /* Tablet size devices */
+      
+      .wrapper h2{
+        font-size: 1.3rem;
+    }
+    .subHeader{
+        font-size: 1.1rem;
+    }
+    .para{
+        font-size: 1.0rem;
+    }
+    }
+    
+    @media only screen and (min-width: 426px) and (max-width: 768px) {
+      /* Medium size devices */
+    
+      .wrapper h2{
+        font-size: 1.2rem;
+    }
+    .subHeader{
+        font-size: 1rem;
+    }
+    .para{
+        font-size: 0.9rem;
+    }
+    }
+    
+    @media only screen and (max-width: 425px) {
+      /* Small devices */
+      .wrapper h2{
+        font-size: 1.1rem;
+    }
+        .subHeader{
+            font-size: 0.9rem;
+        }
+        .para{
+            font-size: 0.8rem;
+        }
+    }

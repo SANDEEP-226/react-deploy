@@ -1,0 +1,60 @@
+import React,{ useState } from 'react'
+import Style from "./../../modules/GlobalStyling.module.css"
+import inStyle from "./../../modules/Body/FAQs.module.css"
+import { FiChevronDown , FiChevronUp } from "react-icons/fi"
+import data from "./../../Json/FAQ.json"
+import axios from "axios"
+
+export default function FAQs({id}) {
+
+  const baseURL = "http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][SingleQnA][populate]=*"
+  const [post, setPost] = React.useState(null);
+  const [state, setstate] = useState(false);
+
+  // console.log("Two",id);
+  // const { data , error } = useFetch(baseURL);
+
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      console.log("FAQ");
+      console.log(JSON.stringify(response.data.data.attributes.Content[id]));
+      setPost(response.data.data.attributes.Content[id]);
+      // console.log(Object.keys(response.data.data.attributes));
+    }).catch((error ) => {
+      console.log(error);
+    }) ;
+  }, []);
+
+  if (!post) return null;
+  console.log(post.SingleQnA);
+  console.log("------");
+    // console.log(data);
+  return (
+    <div className={inStyle.wrapper}>
+        <h2 className={Style.h2}>Booking Your Dubai Attraction Tickets: FAQs</h2>
+        {
+            post.SingleQnA.map((value , key) => {
+                // console.log(value,key);
+                return (
+                    <div key={key} className={inStyle.content}>
+                        <div className={inStyle.header} onClick={() => {
+                            setstate(!state)
+                            value.status= state
+                        }}>
+                            <div className={Style.subHeader}>{value.Question}</div>
+                            <div>{value.status ? <FiChevronUp/> : <FiChevronDown/>}</div>
+                        </div>
+                        <div className={value.status  ? inStyle.view : inStyle.hide}>
+                            <p className={Style.para}>
+                                {value.Answer}
+                            </p>
+                        </div>
+                    </div>
+                )
+            } )
+        }
+        
+        
+    </div>
+  )
+}

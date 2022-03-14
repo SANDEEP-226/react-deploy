@@ -1,0 +1,54 @@
+.cointainer {
+    /* width: 100%; */
+    min-height: 300px;
+    height: auto;
+    background-color: #2e343d;
+    color: #b7b7b7;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .thrilloLogo {
+    padding: 5px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../../assets/ThrillophilliaDark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+  }
+  
+  .imgLogo {
+    /* height: 100%; */
+    /* width: 100%; */
+    max-width: 100%;
+    height: auto;
+    max-height: 90px;
+  }
+  
+  .logoBar {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    align-self: center;
+    /* background-color: #fff; */
+  }
+  
+  .lineAround {
+    height: 2px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  .myPera {
+    align-self: center;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  

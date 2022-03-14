@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title" : "Dubai",
+        "Cost" : "75"
+     },
+    {
+        "id": 2,
+        "title" : "Desert Safari",
+        "Cost" : "50"
+    },
+    {
+        "id": 3,
+        "title" : "Burj Khalifa",
+        "Cost" : "100"
+     },
+    {
+        "id": 4,
+        "title" : "Dubai Frame",
+        "Cost" : "85"
+    }
+] 

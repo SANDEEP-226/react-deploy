@@ -1,0 +1,12 @@
+.cointainer {
+  /* background-color: tomato; */
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons {
+  /* font-size: 1.5rem; */
+  color: #999;
+}
