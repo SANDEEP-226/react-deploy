@@ -11,8 +11,8 @@ export default function QuickLinks({id}) {
 
     React.useEffect(() => {
       axios.get(baseURL).then((response) => {
-        console.log("Ql");
-        console.log(JSON.stringify(response.data.data.attributes.Content[id]));
+        // console.log("Ql");
+        // console.log(JSON.stringify(response.data.data.attributes.Content[id]));
         setPost(response.data.data.attributes.Content[id]);
         // console.log(Object.keys(response.data.data.attributes));
       }).catch((error ) => {
@@ -21,7 +21,7 @@ export default function QuickLinks({id}) {
     }, []);
   
     if (!post) return null;
-    console.log(post.One_Category);
+    // console.log(post.One_Category);
     // console.log("------");
   return (
     <div className={Style.wrapper}>

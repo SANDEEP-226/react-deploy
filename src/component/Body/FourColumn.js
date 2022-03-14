@@ -14,7 +14,7 @@ export default function FourColumn({id}) {
 
     React.useEffect(() => {
       axios.get(baseURL).then((response) => {
-        console.log("Three");
+        // console.log("Three");
         // console.log(JSON.stringify(response.data.data.attributes.Content[id]));
         // console.log(JSON.stringify(response.data.data.attributes.Content[id].Variant));
         setPost(response.data.data.attributes.Content[id]);

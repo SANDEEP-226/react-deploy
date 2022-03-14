@@ -27,7 +27,7 @@
 .bookBtn{
     border: 2px solid white;
     font-size: 1rem;
-    padding: 0.4rem 0.6rem;
+    padding: 0.4rem 0.2rem;
     width: 80px;
     font-family: sans-serif;
     /* padding: 5px 10px; */
@@ -65,4 +65,4 @@
       /* Small devices */
     
     
-    }
+    } 

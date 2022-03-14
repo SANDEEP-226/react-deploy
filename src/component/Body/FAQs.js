@@ -16,8 +16,8 @@ export default function FAQs({id}) {
 
   React.useEffect(() => {
     axios.get(baseURL).then((response) => {
-      console.log("FAQ");
-      console.log(JSON.stringify(response.data.data.attributes.Content[id]));
+      // console.log("FAQ");
+      // console.log(JSON.stringify(response.data.data.attributes.Content[id]));
       setPost(response.data.data.attributes.Content[id]);
       // console.log(Object.keys(response.data.data.attributes));
     }).catch((error ) => {
@@ -26,8 +26,8 @@ export default function FAQs({id}) {
   }, []);
 
   if (!post) return null;
-  console.log(post.SingleQnA);
-  console.log("------");
+  // console.log(post.SingleQnA);
+  // console.log("------");
     // console.log(data);
   return (
     <div className={inStyle.wrapper}>

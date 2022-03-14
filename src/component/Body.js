@@ -68,7 +68,7 @@ export default function Body() {
     <div>
       {
         post.map( ( value , key ) => {
-          console.log(value.__component.substring(9));
+          // console.log(value.__component.substring(9));
           return(
           <div key={key}  className={Style.wrapper} >
           {
