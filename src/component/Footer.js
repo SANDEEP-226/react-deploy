@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import classes from "./../modules/Footer/Footer.module.css";
 import SocilaLine from "./Footer/SocialLine";
-import img from "../assets/ThrillophilliaDark.png";
 import axios from "axios";
 
 export default function Footer() {
@@ -43,7 +42,7 @@ export default function Footer() {
         <SocilaLine data={social} marginVertical={"20px"} />
 
         <p className={` col-9 md-col-10 sm-col-11 ${classes.myPera}`}>
-          <b>&copy; 2022 Thrillophilia.com All rights reserved.</b>
+          <b>{data.Copy_Right_Text}</b>
         </p>
         <p className={` col-9 md-col-10 sm-col-11 ${classes.myPera}`}>
           {data.Content}
