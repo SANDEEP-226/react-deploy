@@ -13,22 +13,22 @@
 
 }
 .imageContainer {
-    width: 100%;
-    /* background-color: aqua; */
+  width: 100%;
+  /* background-color: aqua; */
 }
-.imageContainer img{
-    width: 100%;
-    height: 100%;
-    /* object-fit: fill; */
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: fill; */
 }
-.contentContainer{
-    font-size: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-    line-height: 1.4rem;
+.contentContainer {
+  font-size: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  line-height: 1.4rem;
 }
-.rowTitle h2{
-    font-size: 24px;
-    color: #444444;
+.rowTitle h2 {
+  font-size: 24px;
+  color: #444444;
 }
 .grey{
     /* background-color: rgb(250, 250, 250); */
@@ -54,54 +54,44 @@
 }
 
 @media only screen and (min-width: 1441px) {
-    /* Large Size Devices */ 
-  
-    
-  
+  /* Large Size Devices */
 }
-@media only screen and (min-width: 1025px) and (max-width: 1440px){
-/* Default size devices */
-.contentContainer{
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Default size devices */
+  .contentContainer {
     font-size: 0.9rem;
     padding: 0.8rem 0.8rem 0.8rem 0.8rem;
     line-height: 1.5rem;
+  }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet size devices */
 
-
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    /* Tablet size devices */
-    
-    .contentContainer{
-        padding: 0.75rem 0.75rem 0.75rem 0.75rem;
-        font-size: 0.8rem;
-        line-height: 1.45rem;
-    }
-
+  .contentContainer {
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1.45rem;
+  }
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-    /* Medium size devices */
-    .container{
-        flex-direction: column;
-    }
-    .contentContainer{
-        font-size: 0.75rem;
-        line-height: 1.4rem;
-        padding: 0.75rem 0.75rem 0.75rem 0.75rem;
-        
-    }
-    
-    
+  /* Medium size devices */
+  .container {
+    flex-direction: column;
+  }
+  .contentContainer {
+    font-size: 0.75rem;
+    line-height: 1.4rem;
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  }
 }
 @media only screen and (max-width: 425px) {
-    /* Small devices */
-    .container{
-        flex-direction: column;
-    }
-    .contentContainer{
-        font-size: 0.68rem;
-        padding: 0.75rem 0.75rem 0rem;
-        line-height: 1.3rem;
-    }
-
+  /* Small devices */
+  .container {
+    flex-direction: column;
+  }
+  .contentContainer {
+    font-size: 0.68rem;
+    padding: 0.75rem 0.75rem 0rem;
+    line-height: 1.3rem;
+  }
 }
