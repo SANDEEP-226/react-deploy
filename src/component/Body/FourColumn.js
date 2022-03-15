@@ -51,7 +51,7 @@ export function FourColumnContent( { data } ){
 
   return(
       <div className={Style.FourColumnContentContainer}>
-          <ReactMarkdown>{state ? data : data.substring(0,40)}</ReactMarkdown>
+          <ReactMarkdown>{state ? data : data.substring(0,20)}</ReactMarkdown>
           <p onClick={() => setstate(!state)} className= { Style.readMore }>{data.length < 200 ? null: state ? "Read Less" : "Read More"}</p>
       </div>
   )
