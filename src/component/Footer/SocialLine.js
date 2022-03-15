@@ -40,20 +40,15 @@ export default function SocilaLine({ marginVertical }) {
       {data.map((data, index) => {
         const img = "http://localhost:1337" + data.Icon.data.attributes.url;
         return (
-          <img
-            style={{ height: "18px", width: "18px" }}
-            src={img}
-            alt={data.Socila_media_name}
-          />
+          <a key={index} href={data.link}>
+            <img
+              style={{ height: "18px", width: "18px" }}
+              src={img}
+              alt={data.Socila_media_name}
+            />
+          </a>
         );
       })}
-
-      {/*<BsFacebook className={classes.icons} />
-      <BsInstagram className={classes.icons} />
-      <BsLinkedin className={classes.icons} />
-      <BsTwitter className={classes.icons} />
-      <BsYoutube className={classes.icons} />
-  */}
     </div>
   );
 }
