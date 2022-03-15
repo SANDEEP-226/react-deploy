@@ -21,7 +21,6 @@ export default function SocilaLine({ marginVertical }) {
       .then((response) => {
         const preparedData =
           response.data.data.attributes.Footer[0].Social_Buttons;
-        console.log(JSON.stringify(preparedData));
         setdata(preparedData);
       })
       .catch((error) => {
@@ -39,7 +38,6 @@ export default function SocilaLine({ marginVertical }) {
       className={`${Styles.col_3} ${Styles.md_col_4} ${Styles.sm_col_6} ${classes.cointainer}`}
     >
       {data.map((data, index) => {
-        console.log(data);
         const img = "http://localhost:1337" + data.Icon.data.attributes.url;
         return (
           <img
