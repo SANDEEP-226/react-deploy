@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Style from './../../modules/Body/Card.module.css'
-import {TwoColumnContent} from "./TwoColumn"
-import {ThreeColumnContent} from "./ThreeColumn"
-import {FourColumnContent} from "./FourColumn"
+import { TwoColumnContent } from "./TwoColumn"
+import { ThreeColumnContent } from "./ThreeColumn"
+import { FourColumnContent } from "./FourColumn"
 import data from "./../../Json/ColumnCotent.json"
-// import img from "../../assets/Ban4.jpeg"
 
 function findHeight(type) {
     switch (type) {
@@ -20,7 +19,6 @@ function findHeight(type) {
     }
 }
 
-
 function Switch(type , payload){
     switch (type) {
         case "twoColumn":
@@ -34,23 +32,20 @@ function Switch(type , payload){
     }
 }
 
- 
 export default function Card({type , value}) {
-    console.log(value.Image.data.attributes.url);
     const img = "http://localhost:1337"+value.Image.data.attributes.url;
-    // const data = value.Content;
-    console.log(data);
   return (
-    <Link to={ `/product/${value.id}`}>
-        <div className={Style.cardContainer}>
-            <div className={Style.imageContainer }>
-                <img src={img} style={{height:findHeight(type)}} />
-                {console.log("Style"+"."+findHeight(type))}
+       
+            <div className={Style.cardContainer}>
+                 <Link to={ `/product/${value.id}`}>
+                 <div className={Style.imageContainer }>
+                    <img src={img} style={{height:findHeight(type)}} />
+                </div>
+                 </Link>
+                
+                <div className={Style.contentContainer}>
+                    {Switch(type,value.Content)}
+                </div>
             </div>
-            <div className={Style.contentContainer}>
-                {Switch(type,value.Content)}
-            </div>
-        </div>
-    </Link>
   )
 }

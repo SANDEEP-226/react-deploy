@@ -3,14 +3,13 @@ import React ,{ useState } from 'react'
 import Style from "./../../modules/Product/VariantContainer.module.css"
 
 function Render(data){
-    console.log(data);
     return(
         <div className={Style.Render}>
             <ul>
             {
                 data.content.map(( value , key) => {
                     return(
-                        <li>{value}</li>
+                        <li key = { key }>{value}</li>
                     )
                 })
             }       
@@ -23,7 +22,6 @@ function Render(data){
 export default function VariantCard({data}) {
 
     const [state, setstate] = useState(0);
-    console.log(data);
   return ( 
     <div className={Style.cardWrapper}>
         <div className={Style.leftContainer}>

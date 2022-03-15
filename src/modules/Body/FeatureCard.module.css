@@ -1,14 +1,16 @@
-.wrapper {
-  width: 85%;
-  margin: 30px 0;
+.wrapper{
+    width:85%;
+    padding: 40px 0px;
 }
-.container {
-  width: 100%;
-  /* background-color: antiquewhite; */
-  display: flex;
-  flex-direction: row;
-  box-shadow: rgb(0 0 0 / 7%) 0px 12px 20px;
-  border: 1px solid rgb(235, 235, 235);
+.container{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgb(0 0 0 / 7%) 0px 12px 20px;
+    border: 1px solid rgb(235, 235, 235);
+    background-color: #fff;
+
 }
 .imageContainer {
   width: 100%;
@@ -27,6 +29,28 @@
 .rowTitle h2 {
   font-size: 24px;
   color: #444444;
+}
+.grey{
+    /* background-color: rgb(250, 250, 250); */
+}
+
+.Grey_BackgroundBox{
+    background-color: rgb(245, 245, 245);
+    /* background-color: tomato; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.White_BackgroundBox{
+    background-color: #fff;
+    /* background-color: tomato; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 1441px) {
