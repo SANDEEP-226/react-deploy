@@ -57,7 +57,7 @@ export default function NavBar() {
           {
             post[0].Link_Item.map((value , key) => {
               return (
-                <div>
+                <div key = { key }>
                   <div className={Style.content} 
                     onClick={() => {
                       setDropdown(!dropdown);

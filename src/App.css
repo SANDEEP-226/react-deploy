@@ -1,6 +1,6 @@
 *{
   text-decoration: none;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .container{
@@ -13,6 +13,9 @@ Link{
   list-style: none;
   font-style: none;
   color: none;
+}
+.grey{
+  background-color: red;
 }
 
     @media only screen and (min-width: 1441px) {

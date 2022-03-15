@@ -19,7 +19,7 @@ function getColumn(size , key) {
     case "Small":
       return <FourColumn id={key} />
     default:
-      return "NULL1";
+      return "";
   }
 }
 
