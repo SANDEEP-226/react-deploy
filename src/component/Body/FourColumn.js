@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useState } from 'react'
 import axios from 'axios'
 import ReactMarkdown from 'react-markdown'
 import Style from "./../../modules/Body/Column.module.css"
@@ -47,11 +47,12 @@ export default function FourColumn({id}) {
 
 
 export function FourColumnContent( { data } ){
+  const [state, setstate] = useState(false);
+
   return(
       <div className={Style.FourColumnContentContainer}>
-          <ReactMarkdown>
-            {data}
-          </ReactMarkdown>
+          <ReactMarkdown>{state ? data : data.substring(0,40)}</ReactMarkdown>
+          <p onClick={() => setstate(!state)} className= { Style.readMore }>{data.length < 200 ? null: state ? "Read Less" : "Read More"}</p>
       </div>
   )
 }

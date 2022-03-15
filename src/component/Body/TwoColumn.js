@@ -52,7 +52,7 @@ export default function TwoColumn({id}) {
        
         <div className={Style.TwoColumnContentContainer}>
             <ReactMarkdown>{state ? data : data.substring(0,200)}</ReactMarkdown>
-            <p onClick={() => setstate(!state)}>{data.length < 200 ? null:"Read More"}</p>
+            <p onClick={() => setstate(!state)} className= { Style.readMore }>{data.length < 200 ? null: state ? "Read Less" :"Read More"}</p>
         </div>
     )
   }

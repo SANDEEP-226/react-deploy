@@ -90,6 +90,11 @@
   color: black;
   min-height: auto;
 }
+.readMore{
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: coral;
+}
 
 @media only screen and (min-width: 1441px) {
   /* Large Size Devices */
