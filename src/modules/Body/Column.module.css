@@ -95,6 +95,7 @@
 }
 .readMore{
   font-family: sans-serif;
+  cursor: pointer;
   font-size: 0.8rem;
   color: coral;
 }
