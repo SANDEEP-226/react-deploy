@@ -1,0 +1,569 @@
+{
+    "id": 330,
+    "name": "Pawna Lake Camping",
+    "starting_price": 739.1,
+    "strike_through_price": 1278.0,
+    "least_priced_inventory": "Adult",
+    "custom_highlights": [
+        "Campfire included",
+        "BBQ snacks included",
+        "Lakeside camping experience"
+    ],
+    "know_before_you_gos": [
+        "Pawna Lake Distance from Mumbai: 120 KM (Via Lonavala, Bhangarwadi Rd)",
+        "Pawna Lake Distance from Pune: 60 KM ( Via Kamshet)",
+        "Music timings are upto 11 PM",
+        "Best and safest is to reach the campsite within 6.30 PM.",
+        "Driving after sunset becomes difficult in these roads and can take more than expected time.",
+        "Please note that the roads to reach Pawna have patches which give you the thrill of an off-road drive specially the last 10 KMS.",
+        "Pawna Lake Campsite allotment is based on availability and it may be Lakeside / Hill side with a lake view."
+    ],
+    "accessibilities": [],
+    "things_to_carry": [
+        {
+            "name": "Rain cover",
+            "is_mandatory": false
+        },
+        {
+            "name": "Valid id proof",
+            "is_mandatory": true
+        }
+    ],
+    "featured_media": {
+        "id": 2195,
+        "media_urls": {
+            "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/plc42zf5agik8ddxg2n6klu1jn7h_media-desktop-pawna-lake-camping-2018-9-28-t-13-23-59.jpeg",
+            "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/plc42zf5agik8ddxg2n6klu1jn7h_media-desktop-pawna-lake-camping-2018-9-28-t-13-23-59.jpeg",
+            "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/plc42zf5agik8ddxg2n6klu1jn7h_media-desktop-pawna-lake-camping-2018-9-28-t-13-23-59.jpeg"
+        },
+        "caption": null,
+        "position": 5,
+        "is_featured": true
+    },
+    "product_location": "Lonavala",
+    "overview": "<p>Pawna Lake is an artificial reservoir formed by water of its namesake dam. Situated towards the outskirts of Lonavala, this lake is a popular picnic and leisure spot. Rich verdure encompasses this lake, making it a delight for those who want to spend time in the lap of nature.</p><p>Facilities for row and motor boating are available at this place, which add to its popularity. While enjoying a boat ride on the lake, tourists get magnificent views of three ancient citadels – Tikona, Lohagad and Tunga.</p>",
+    "long_description": "<p><strong style=\"color: rgb(0, 0, 0);\">Photo Opp</strong></p><p>The natural beauty of Pawna Lake makes it a great spot for clicking some beautiful photographs. Tourists can capture its lush surroundings or the distant view of the three old forts from the lake.</p><p><br></p><p><strong style=\"color: rgb(0, 0, 0);\">For Kids</strong></p><p>Boating at Pawna Lake will be enjoyed by kids.</p><p><br></p><p><span style=\"color: rgb(84, 84, 84);\">Pawna Lake Campsite allotment is based on availability and it may be Lakeside / Hill side with a lake view. Please note that the roads to reach Pawna have patches which give you the thrill of an off-road drive specially the last 10 KMS. Driving after sunset becomes difficult in these roads and can take more than expected time. Best and safest is to reach the campsite within 6.30 PM.</span></p>",
+    "trip_difficulty": 1,
+    "rating": 4.5,
+    "review_count": 30,
+    "product_type": "tour",
+    "primary_tag": "Best Seller",
+    "itinerary": {
+        "itinerary_days": [
+            {
+                "day_number": 1,
+                "title": "Arrival at the Pawna Lake Campsite",
+                "description": "<p>Pick-up from the airport and experience the heaven at Pawna lake camping </p>",
+                "events": [
+                    {
+                        "position": 1,
+                        "event_type": "Description",
+                        "description": "Arrive at the Pawna campsite check-in by 04:00 PM. Walk around the vicinity and explore the location on your own",
+                        "start_time": "04:00 PM",
+                        "duration": [
+                            3,
+                            0,
+                            0
+                        ],
+                        "media": [
+                            {
+                                "id": 2244,
+                                "media_urls": {
+                                    "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/n9mrnc42fqliohtjvqnp8h2sv23g_Pawna-Lake-Camping.jpeg",
+                                    "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/n9mrnc42fqliohtjvqnp8h2sv23g_Pawna-Lake-Camping.jpeg",
+                                    "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/n9mrnc42fqliohtjvqnp8h2sv23g_Pawna-Lake-Camping.jpeg"
+                                },
+                                "caption": null,
+                                "position": 1,
+                                "is_featured": false
+                            }
+                        ]
+                    },
+                    {
+                        "position": 2,
+                        "event_type": "Description",
+                        "description": "Enjoy your BBQ Snacks by 7PM - 8 PM",
+                        "start_time": "07:00 PM",
+                        "duration": [
+                            1,
+                            0,
+                            0
+                        ],
+                        "media": [
+                            {
+                                "id": 2245,
+                                "media_urls": {
+                                    "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/nfjo3u9obfswthmg0ppgi0ydjpqw_bbq.jpg",
+                                    "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/nfjo3u9obfswthmg0ppgi0ydjpqw_bbq.jpg",
+                                    "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/nfjo3u9obfswthmg0ppgi0ydjpqw_bbq.jpg"
+                                },
+                                "caption": null,
+                                "position": 1,
+                                "is_featured": false
+                            },
+                            {
+                                "id": 2246,
+                                "media_urls": {
+                                    "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/58b1bqqyioj9xvdrckma1giynjwx_wp2005458.jpg",
+                                    "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/58b1bqqyioj9xvdrckma1giynjwx_wp2005458.jpg",
+                                    "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/58b1bqqyioj9xvdrckma1giynjwx_wp2005458.jpg"
+                                },
+                                "caption": null,
+                                "position": 2,
+                                "is_featured": false
+                            }
+                        ]
+                    }
+                ],
+                "media": [],
+                "location": null
+            },
+            {
+                "day_number": 2,
+                "title": "Check-out from the Pawna Lake Campsite",
+                "description": "<p><span style=\"color: rgb(59, 68, 78);\">Wake up early morning to enjoy the beautiful sunrise</span></p>",
+                "events": [
+                    {
+                        "position": 1,
+                        "event_type": "Description",
+                        "description": "Wake up early morning to enjoy the beautiful sunrise",
+                        "start_time": "05:00 AM",
+                        "duration": [
+                            2,
+                            0,
+                            0
+                        ],
+                        "media": [
+                            {
+                                "id": 2247,
+                                "media_urls": {
+                                    "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/5w7q2v33tg6lw6h4v4h7z7eeekxb_maxresdefault.jpg",
+                                    "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/5w7q2v33tg6lw6h4v4h7z7eeekxb_maxresdefault.jpg",
+                                    "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/5w7q2v33tg6lw6h4v4h7z7eeekxb_maxresdefault.jpg"
+                                },
+                                "caption": null,
+                                "position": 1,
+                                "is_featured": false
+                            }
+                        ]
+                    },
+                    {
+                        "position": 2,
+                        "event_type": "Description",
+                        "description": "The breakfast is served around 9 AM",
+                        "start_time": "09:00 AM",
+                        "duration": [
+                            1,
+                            0,
+                            0
+                        ],
+                        "media": [
+                            {
+                                "id": 2248,
+                                "media_urls": {
+                                    "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/uuhl0t5q8bxjdfibj9rnvsbdexmq_clip_image002.jpg",
+                                    "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/uuhl0t5q8bxjdfibj9rnvsbdexmq_clip_image002.jpg",
+                                    "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/uuhl0t5q8bxjdfibj9rnvsbdexmq_clip_image002.jpg"
+                                },
+                                "caption": null,
+                                "position": 1,
+                                "is_featured": false
+                            },
+                            {
+                                "id": 2249,
+                                "media_urls": {
+                                    "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/vshrufndcevfga6z22q7xfi6cg5s_maxresdefault%20%281%29.jpg",
+                                    "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/vshrufndcevfga6z22q7xfi6cg5s_maxresdefault%20%281%29.jpg",
+                                    "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/vshrufndcevfga6z22q7xfi6cg5s_maxresdefault%20%281%29.jpg"
+                                },
+                                "caption": null,
+                                "position": 2,
+                                "is_featured": false
+                            },
+                            {
+                                "id": 2250,
+                                "media_urls": {
+                                    "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/dafr662lt7ii6zkri07m7jkvulg4_slider-1.png",
+                                    "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/dafr662lt7ii6zkri07m7jkvulg4_slider-1.png",
+                                    "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/dafr662lt7ii6zkri07m7jkvulg4_slider-1.png"
+                                },
+                                "caption": null,
+                                "position": 3,
+                                "is_featured": false
+                            }
+                        ]
+                    },
+                    {
+                        "position": 3,
+                        "event_type": "Description",
+                        "description": "You may check-out from the camps by 11:00 AM.",
+                        "start_time": "11:00 AM",
+                        "duration": [
+                            0,
+                            30,
+                            0
+                        ],
+                        "media": []
+                    }
+                ],
+                "media": [],
+                "location": null
+            }
+        ]
+    },
+    "pickup_points": [],
+    "drop_points": [],
+    "highlights": [
+        "Cashback",
+        "Thrilophilia Safe",
+        "Hotel pickup",
+        "Guide",
+        "Thrillophilia Originals",
+        "Meals Included"
+    ],
+    "contact_phone_country_code": "+91",
+    "contact_phone": "9874563210",
+    "gallery_media": [
+        {
+            "id": 2191,
+            "media_urls": {
+                "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/qkmyi8oixacadig2xivv3onsmweh_2a61fae6-8326-4809-be56-3a9f2ba824e3.jpeg",
+                "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/qkmyi8oixacadig2xivv3onsmweh_2a61fae6-8326-4809-be56-3a9f2ba824e3.jpeg",
+                "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/qkmyi8oixacadig2xivv3onsmweh_2a61fae6-8326-4809-be56-3a9f2ba824e3.jpeg"
+            },
+            "caption": null,
+            "position": 1,
+            "is_featured": false
+        },
+        {
+            "id": 2192,
+            "media_urls": {
+                "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/gcv4lffnfy4eyps0vx6v0hptwjz3_itin.jpg",
+                "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/gcv4lffnfy4eyps0vx6v0hptwjz3_itin.jpg",
+                "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/gcv4lffnfy4eyps0vx6v0hptwjz3_itin.jpg"
+            },
+            "caption": null,
+            "position": 2,
+            "is_featured": false
+        },
+        {
+            "id": 2193,
+            "media_urls": {
+                "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/eirbt9yjlzvuyeoss5q1d6gj0int_images%20%281%29.jpg",
+                "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/eirbt9yjlzvuyeoss5q1d6gj0int_images%20%281%29.jpg",
+                "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/eirbt9yjlzvuyeoss5q1d6gj0int_images%20%281%29.jpg"
+            },
+            "caption": null,
+            "position": 3,
+            "is_featured": false
+        },
+        {
+            "id": 2194,
+            "media_urls": {
+                "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/ufp4id3c64u4oezxsqdxvlcekh4y_images.jpg",
+                "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/ufp4id3c64u4oezxsqdxvlcekh4y_images.jpg",
+                "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/ufp4id3c64u4oezxsqdxvlcekh4y_images.jpg"
+            },
+            "caption": null,
+            "position": 4,
+            "is_featured": false
+        },
+        {
+            "id": 2196,
+            "media_urls": {
+                "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/dm6wbjhy7bucgxhbopgbtaukmqas_Pawna_Lake__3_.jpg",
+                "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/dm6wbjhy7bucgxhbopgbtaukmqas_Pawna_Lake__3_.jpg",
+                "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/dm6wbjhy7bucgxhbopgbtaukmqas_Pawna_Lake__3_.jpg"
+            },
+            "caption": null,
+            "position": 6,
+            "is_featured": false
+        }
+    ],
+    "faqs": [
+        {
+            "id": 362,
+            "question": "What is the best time for camping at Pawna Lake?",
+            "answer": "You can go for Pawna Lake camping throughout the year. The rainy season and the period immediately after the rainy season is one of the best time to plan your expedition to this place.\n\nThe wet and cool weather during this time brings out the best features of this place and gives the tourists a wonderful time to enjoy among themselves. If you are planning to go there for camping, then this is one of the best time to be here.\n\nAfter October, the weather tends to turn dry and hot as compared to the monsoon months between July and September.",
+            "position": 1
+        },
+        {
+            "id": 363,
+            "question": "How to reach at Pawna lake?",
+            "answer": "If you are starting your trip from Pune, to reach Pawna lake, you would have to travel a distance of 60 KM via Kamshet. From Mumbai, you can take a route to Via Lonavala and reach the location by travelling 120 KM.\n\nIf bringing your own vehicle, make sure you reach the location before dawn, as the last 10 KMs are rocky terrains, and driving there is a bit difficult.",
+            "position": 2
+        },
+        {
+            "id": 364,
+            "question": "What is the average Pawna lake temperature?",
+            "answer": "The average annual temperature at Pawna Lake is about 23.3 degree Celsius. The place has a tropical climate and receives considerable rainfall during the year.",
+            "position": 3
+        },
+        {
+            "id": 365,
+            "question": "Can we go on Pawna lake camping in summers?",
+            "answer": "Yes, Pawna Lake is filled with water throughout the year, which makes it possible for tourists to visit the lake even during summertime. The weather, however, will be hot and the surrounding scenes might not be as attractive as they are usually during the monsoon season. Thus, if you are planning to make a trip to Pawna Lake, it might be wise to choose the monsoon season for the same.",
+            "position": 4
+        },
+        {
+            "id": 366,
+            "question": "What activities can be done during camping at Pawna lake?",
+            "answer": "Outdoor activities like volleyball, cricket, football, badminton and archery along with indoor activities like carrom, chess, ludo and other board games are included in the basic package.\n\nHowever, if you wish to indulge in activities like sightseeing, horse riding, kayaking, water activities, trek, etc, then you would have to pay an additional cost according to the activity you choose.",
+            "position": 5
+        },
+        {
+            "id": 361,
+            "question": "What is the cost of Pawna lake camping?",
+            "answer": "The cost for Pawna lake camping for 2 days and 1 night start at only INR 778 and is being offered at a discount of 39%. Book an exotic holiday vacation to the popular Pawna lake at the best prices, only at Thrillophilia. ",
+            "position": 6
+        },
+        {
+            "id": 356,
+            "question": "What is the best time for camping at Pawna Lake?",
+            "answer": "You can go for Pawna Lake camping throughout the year. The rainy season and the period immediately after the rainy season is one of the best time to plan your expedition to this place.\n\nThe wet and cool weather during this time brings out the best features of this place and gives the tourists a wonderful time to enjoy among themselves. If you are planning to go there for camping, then this is one of the best time to be here.\n\nAfter October, the weather tends to turn dry and hot as compared to the monsoon months between July and September.",
+            "position": 7
+        },
+        {
+            "id": 357,
+            "question": "How to reach at Pawna lake?",
+            "answer": "If you are starting your trip from Pune, to reach Pawna lake, you would have to travel a distance of 60 KM via Kamshet. From Mumbai, you can take a route to Via Lonavala and reach the location by travelling 120 KM.\n\nIf bringing your own vehicle, make sure you reach the location before dawn, as the last 10 KMs are rocky terrains, and driving there is a bit difficult.",
+            "position": 8
+        },
+        {
+            "id": 358,
+            "question": "What is the average Pawna lake temperature?",
+            "answer": "The average annual temperature at Pawna Lake is about 23.3 degree Celsius. The place has a tropical climate and receives considerable rainfall during the year.",
+            "position": 9
+        },
+        {
+            "id": 359,
+            "question": "Can we go on Pawna lake camping in summers?",
+            "answer": "Yes, Pawna Lake is filled with water throughout the year, which makes it possible for tourists to visit the lake even during summertime. The weather, however, will be hot and the surrounding scenes might not be as attractive as they are usually during the monsoon season. Thus, if you are planning to make a trip to Pawna Lake, it might be wise to choose the monsoon season for the same.",
+            "position": 10
+        },
+        {
+            "id": 360,
+            "question": "What activities can be done during camping at Pawna lake?",
+            "answer": "Outdoor activities like volleyball, cricket, football, badminton and archery along with indoor activities like carrom, chess, ludo and other board games are included in the basic package.\n\nHowever, if you wish to indulge in activities like sightseeing, horse riding, kayaking, water activities, trek, etc, then you would have to pay an additional cost according to the activity you choose.",
+            "position": 11
+        },
+        {
+            "id": 355,
+            "question": "What is the cost of Pawna lake camping?",
+            "answer": "The cost for Pawna lake camping for 2 days and 1 night start at only INR 778 and is being offered at a discount of 39%. Book an exotic holiday vacation to the popular Pawna lake at the best prices, only at Thrillophilia. ",
+            "position": 12
+        }
+    ],
+    "variants": [
+        {
+            "id": 166,
+            "name": "Camping Experience for All",
+            "overview": "<p>There would be a great experience at the Pawna lake camping, separate camps are also provided as per the request. The below is the list provided in the package :</p><p>Evening Tea &amp; Snacks (4 PM -6 PM)</p><p>BBQ Sancks (Limited Quatity ,Veg/Non-Veg Cooked by Staff from 7 PM - 8 PM)</p><p>Unlimited Dinner Veg/Non-Veg(Self service from 9:30 PM -11:00 PM)</p><p>Breakfast (Tea &amp; Poha from 8 AM - 9 AM)</p><p>Bonfire after Dinner</p><p>Accomodation in tents on Multiple sharing basis</p><p>Common Washroom facilities available</p><p>Music Timming : Upto 2 AM&nbsp;</p>",
+            "inventory_type": "pax",
+            "has_time_slots": false,
+            "duration_type": "days_and_nights",
+            "duration_days": 2,
+            "duration_hours": 0,
+            "duration_minutes": 0,
+            "duration_nights": 1,
+            "inclusions": [
+                {
+                    "name": "Meals",
+                    "description": null
+                },
+                {
+                    "name": "Guide",
+                    "description": null
+                },
+                {
+                    "name": "Activities",
+                    "description": null
+                },
+                {
+                    "name": "Stay",
+                    "description": null
+                }
+            ],
+            "exclusions": [
+                {
+                    "name": "Entry Ticket to the Park",
+                    "description": null
+                },
+                {
+                    "name": "Permits",
+                    "description": null
+                },
+                {
+                    "name": "Transfers",
+                    "description": null
+                }
+            ],
+            "bookable_inventories": [
+                {
+                    "id": 286,
+                    "inventory": {
+                        "id": 10,
+                        "name": "Senior",
+                        "inventory_type": "pax",
+                        "no_of_seats": 1
+                    },
+                    "pricing_type": "flat_pricing",
+                    "min_occupancy": null,
+                    "max_occupancy": null,
+                    "amount": "1650.0",
+                    "strike_through_amount": "2859.0"
+                },
+                {
+                    "id": 285,
+                    "inventory": {
+                        "id": 6,
+                        "name": "Adult",
+                        "inventory_type": "pax",
+                        "no_of_seats": 1
+                    },
+                    "pricing_type": "flat_pricing",
+                    "min_occupancy": null,
+                    "max_occupancy": null,
+                    "amount": "778.0",
+                    "strike_through_amount": "1278.0"
+                }
+            ],
+            "starting_price": 739.1,
+            "strike_through_price": 1278.0,
+            "least_priced_inventory": "Adult",
+            "booking_type": "group",
+            "gallery_media": [
+                {
+                    "id": 2197,
+                    "media_urls": {
+                        "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/oo0sy950kvoocqqat3m9ugdf8neb_Pawna-Lake-Camping.jpg",
+                        "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/oo0sy950kvoocqqat3m9ugdf8neb_Pawna-Lake-Camping.jpg",
+                        "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/oo0sy950kvoocqqat3m9ugdf8neb_Pawna-Lake-Camping.jpg"
+                    },
+                    "caption": null,
+                    "position": 1,
+                    "is_featured": true
+                }
+            ]
+        },
+        {
+            "id": 167,
+            "name": "Camping Experience for Family",
+            "overview": "<p>There would be a great experience at the Pawna lake camping, separate camps are also provided as per the request. The below is the list provided in the package :</p><p>Evening Tea &amp; Snacks (4 PM - 6 PM)</p><p>Limited BBQ Snacks(Veg/Non-veg | Cooked by staff ) (7 PM -8 PM)</p><p>Unlimited Veg /Non-veg Dinner (Self service) (9:30 PM - 10:30 PM)</p><p>Bonfire after Dinner&nbsp;</p><p>Breakfast (Tea &amp; Poha from 8 AM - 9 AM)</p><p>Accomodation in Tents on Multiple sharing sharing basis.</p><p>Common washroom facilities available&nbsp;</p>",
+            "inventory_type": "pax",
+            "has_time_slots": false,
+            "duration_type": "days_and_nights",
+            "duration_days": 3,
+            "duration_hours": 0,
+            "duration_minutes": 0,
+            "duration_nights": 2,
+            "inclusions": [
+                {
+                    "name": "Stay",
+                    "description": null
+                },
+                {
+                    "name": "Meals",
+                    "description": null
+                },
+                {
+                    "name": "Driver",
+                    "description": null
+                },
+                {
+                    "name": "Tour Leader",
+                    "description": null
+                },
+                {
+                    "name": "Activities",
+                    "description": null
+                }
+            ],
+            "exclusions": [
+                {
+                    "name": "Transfers",
+                    "description": null
+                },
+                {
+                    "name": "Entry Ticket to the Park",
+                    "description": null
+                }
+            ],
+            "bookable_inventories": [
+                {
+                    "id": 288,
+                    "inventory": {
+                        "id": 7,
+                        "name": "Child",
+                        "inventory_type": "pax",
+                        "no_of_seats": 1
+                    },
+                    "pricing_type": "flat_pricing",
+                    "min_occupancy": null,
+                    "max_occupancy": null,
+                    "amount": "1500.0",
+                    "strike_through_amount": "1569.0"
+                },
+                {
+                    "id": 287,
+                    "inventory": {
+                        "id": 11,
+                        "name": "Couple",
+                        "inventory_type": "pax",
+                        "no_of_seats": 2
+                    },
+                    "pricing_type": "slab_pricing",
+                    "min_occupancy": null,
+                    "max_occupancy": null,
+                    "slabs": [
+                        {
+                            "units_from": 1,
+                            "units_to": 20,
+                            "amount": "2289.0",
+                            "strike_through_amount": "3589.0"
+                        }
+                    ]
+                }
+            ],
+            "starting_price": 2174.55,
+            "strike_through_price": 3589.0,
+            "least_priced_inventory": "Couple",
+            "booking_type": "group",
+            "gallery_media": [
+                {
+                    "id": 2198,
+                    "media_urls": {
+                        "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/9tcb3n4kkzfb6wlcjlwqap8cuodk_2a61fae6-8326-4809-be56-3a9f2ba824e3.jpeg",
+                        "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/9tcb3n4kkzfb6wlcjlwqap8cuodk_2a61fae6-8326-4809-be56-3a9f2ba824e3.jpeg",
+                        "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/9tcb3n4kkzfb6wlcjlwqap8cuodk_2a61fae6-8326-4809-be56-3a9f2ba824e3.jpeg"
+                    },
+                    "caption": null,
+                    "position": 1,
+                    "is_featured": false
+                },
+                {
+                    "id": 2199,
+                    "media_urls": {
+                        "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/tm86m062v2bw972ckqzy90q6xg3a_images%20%281%29.jpg",
+                        "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/tm86m062v2bw972ckqzy90q6xg3a_images%20%281%29.jpg",
+                        "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/tm86m062v2bw972ckqzy90q6xg3a_images%20%281%29.jpg"
+                    },
+                    "caption": null,
+                    "position": 2,
+                    "is_featured": false
+                },
+                {
+                    "id": 2200,
+                    "media_urls": {
+                        "thumbnail": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_300,q_auto,w_400/v1/google-cloud/52u4xwnunhnrmb2ghi6opeybfc2h_pawna-lake-camping-tent.jpg",
+                        "placeholder": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_5,q_auto,w_5/v1/google-cloud/52u4xwnunhnrmb2ghi6opeybfc2h_pawna-lake-camping-tent.jpg",
+                        "original": "https://res.cloudinary.com/dy9mztgmb/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/google-cloud/52u4xwnunhnrmb2ghi6opeybfc2h_pawna-lake-camping-tent.jpg"
+                    },
+                    "caption": null,
+                    "position": 3,
+                    "is_featured": false
+                }
+            ]
+        }
+    ]
+}
