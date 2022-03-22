@@ -1,15 +1,16 @@
-import React, { useState } from "react";
-import Style from "./../../modules/GlobalStyling.module.css";
-import inStyle from "./../../modules/Body/FAQs.module.css";
-import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import React, { useState } from 'react';
+import Style from './../../modules/GlobalStyling.module.css';
+import inStyle from './../../modules/Body/FAQs.module.css';
+import { BsPlus } from 'react-icons/bs';
+import { AiOutlineMinus } from 'react-icons/ai';
 
-import ReactMarkdown from "react-markdown";
-import data from "./../../Json/FAQ.json";
-import axios from "axios";
+import ReactMarkdown from 'react-markdown';
+import data from './../../Json/FAQ.json';
+import axios from 'axios';
 
 export default function FAQs({ id }) {
   const baseURL =
-    "http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][SingleQnA][populate]=*";
+    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][SingleQnA][populate]=*';
   const [post, setPost] = React.useState(null);
   const [state, setstate] = useState(false);
 
@@ -26,33 +27,53 @@ export default function FAQs({ id }) {
 
   if (!post) return null;
   return (
-        <div className={
-          post.Grey_Background == true ? inStyle.Grey_BackgroundBox : inStyle.White_BackgroundBox
-        }>
-            <div className={inStyle.wrapper}>
-              <div className={inStyle.container}>
-                <h2 className={Style.h2}><ReactMarkdown>{post.Heading}</ReactMarkdown></h2>
-                {post.SingleQnA.map((value, key) => {
-                  return (
-                    <div key={key} className={inStyle.content}>
-                      <div
-                        className={inStyle.header}
-                        onClick={() => {
-                          setstate(!state);
-                          value.status = state;
-                        }}
-                      >
-                        <div className={Style.subHeader}><ReactMarkdown>{value.Question}</ReactMarkdown></div>
-                        <div>{value.status ? <FiChevronUp /> : <FiChevronDown />}</div>
-                      </div>
-                      <div className={value.status ? inStyle.view : inStyle.hide}>
-                        <p className={Style.para}><ReactMarkdown>{value.Answer}</ReactMarkdown></p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+    <div
+      className={
+        post.Grey_Background == true
+          ? inStyle.Grey_BackgroundBox
+          : inStyle.White_BackgroundBox
+      }
+    >
+      <div className={inStyle.wrapper}>
+        <div className={inStyle.container}>
+          <div className={inStyle.header1}>
+            <div className={inStyle.hr}></div>
+            <div>
+              <ReactMarkdown>{post.Heading}</ReactMarkdown>
             </div>
+            <div className={inStyle.hr}></div>
+          </div>
+          {post.SingleQnA.map((value, key) => {
+            return (
+              <div key={key} className={inStyle.content}>
+                <div
+                  className={inStyle.header}
+                  onClick={() => {
+                    setstate(!state);
+                    value.status = state;
+                  }}
+                >
+                  <div className={inStyle.subHeader}>
+                    <ReactMarkdown>{'Q. ' + value.Question}</ReactMarkdown>
+                  </div>
+                  <div>
+                    {value.status ? (
+                      <AiOutlineMinus className={inStyle.reactIcon} />
+                    ) : (
+                      <BsPlus className={inStyle.reactIcon} />
+                    )}
+                  </div>
+                </div>
+                <div className={value.status ? inStyle.view : inStyle.hide}>
+                  <p className={inStyle.para}>
+                    <ReactMarkdown>{'A. ' + value.Answer}</ReactMarkdown>
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
+      </div>
+    </div>
   );
 }

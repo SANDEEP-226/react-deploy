@@ -1,12 +1,12 @@
-import React from "react";
-import Style from "./../../modules/Body/FeatureCard.module.css";
-import ReactMarkdown from "react-markdown";
-// import img from "../../assets/Ban4.jpeg"
-import axios from "axios";
+import React from 'react';
+import Style from './../../modules/Body/FeatureCard.module.css';
+import ReactMarkdown from 'react-markdown';
+// import imgwsac from "../../assets/Ban4.jpeg"
+import axios from 'axios';
 
 export default function FeatureCard({ id }) {
   const baseURL =
-    "http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][Image][populate]=*";
+    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][Image][populate]=*';
   const [post, setPost] = React.useState(null);
   React.useEffect(() => {
     axios
@@ -20,15 +20,23 @@ export default function FeatureCard({ id }) {
   }, []);
 
   if (!post) return null;
-  const img = "http://localhost:1337" + post.Image.data.attributes.url;
-  if (post.Variant == "Left_Image") {
+  const img = 'http://localhost:1337' + post.Image.data.attributes.url;
+  if (post.Variant == 'Left_Image') {
     return (
-      <div className={ post.Grey_Background == true ? Style.Grey_BackgroundBox : Style.White_BackgroundBox }>
-          <div
-          className={`${Style.wrapper} `}
-        >
-          <div className={Style.rowTitle}>
-            <ReactMarkdown>{post.Heading}</ReactMarkdown>
+      <div
+        className={
+          post.Grey_Background == true
+            ? Style.Grey_BackgroundBox
+            : Style.White_BackgroundBox
+        }
+      >
+        <div className={`${Style.wrapper} `}>
+          <div className={Style.header}>
+            <div className={Style.hr}></div>
+            <div>
+              <ReactMarkdown>{post.Heading}</ReactMarkdown>
+            </div>
+            <div className={Style.hr}></div>
           </div>
           <div className={Style.container}>
             <div className={Style.imageContainer}>
@@ -40,18 +48,23 @@ export default function FeatureCard({ id }) {
           </div>
         </div>
       </div>
-      
     );
   }
   return (
-    <div className={
-      post.Grey_Background == true ? Style.Grey_BackgroundBox : Style.White_BackgroundBox
-    }>
     <div
-      className={`${Style.wrapper} `}
-    > 
-        <div className={Style.rowTitle}>
-          <ReactMarkdown>{post.Heading}</ReactMarkdown>
+      className={
+        post.Grey_Background == true
+          ? Style.Grey_BackgroundBox
+          : Style.White_BackgroundBox
+      }
+    >
+      <div className={`${Style.wrapper} `}>
+        <div className={Style.header}>
+          <div className={Style.hr}></div>
+          <div>
+            <ReactMarkdown>{post.Heading}</ReactMarkdown>
+          </div>
+          <div className={Style.hr}></div>
         </div>
         <div className={Style.container}>
           <div className={Style.contentContainer}>
@@ -61,7 +74,7 @@ export default function FeatureCard({ id }) {
             <img src={img} />
           </div>
         </div>
-      </div>      
+      </div>
     </div>
   );
 }
