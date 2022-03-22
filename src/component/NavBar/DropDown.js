@@ -10,7 +10,7 @@ export default function DropDown(param) {
             {
                 data.map((value , key ) => {
                     return(
-                        <li> 
+                        <li key = { key }>  
                             {value.Link_Name}
                         </li>
                     )
