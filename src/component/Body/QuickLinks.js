@@ -1,11 +1,12 @@
-import React from "react";
-import Style from "./../../modules/Body/QuickLinks.module.css";
-import data from "./../../Json/QuickLinks.json";
-import axios from "axios";
+import React from 'react';
+import Style from './../../modules/Body/QuickLinks.module.css';
+import data from './../../Json/QuickLinks.json';
+import ReactMarkdown from 'react-markdown';
+import axios from 'axios';
 
 export default function QuickLinks({ id }) {
   const baseURL =
-    "http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][One_Category][populate]=*";
+    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][One_Category][populate]=*';
   const [post, setPost] = React.useState(null);
   React.useEffect(() => {
     axios
@@ -28,7 +29,13 @@ export default function QuickLinks({ id }) {
       }
     >
       <div className={Style.wrapper}>
-        <div className={Style.header}>{post.Heading}</div>
+        <div className={Style.header}>
+          <div className={Style.hr}></div>
+          <div>
+            <ReactMarkdown>{post.Heading}</ReactMarkdown>
+          </div>
+          <div className={Style.hr}></div>
+        </div>
         <div className={Style.container}>
           {post.One_Category.map((value, key) => {
             return (

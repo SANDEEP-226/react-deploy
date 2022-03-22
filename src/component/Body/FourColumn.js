@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
-import ReactMarkdown from "react-markdown";
-import Style from "./../../modules/Body/Column.module.css";
-import root from "../../modules/responsive.module.css";
-import data from "./../../Json/ColumnCotent.json";
-import Card from "./Card";
+import React, { useState } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import Style from './../../modules/Body/Column.module.css';
+import root from '../../modules/responsive.module.css';
+import data from './../../Json/ColumnCotent.json';
+import FourCard from './FourCard';
 export default function FourColumn({ id }) {
   const baseURL =
-    "http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][Cards][populate]=*";
+    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][Cards][populate]=*';
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
@@ -34,8 +34,12 @@ export default function FourColumn({ id }) {
       <div
         className={`${Style.row} ${root.md_col_11} ${root.sm_col_10} ${root.tb_col_10} ${root.col_10}  ${root.l_col_11}`}
       >
-        <div className={Style.rowTitle}>
-          <h2>Best Theme Parks in Dubai </h2>
+        <div className={Style.header}>
+          <div className={Style.hr}></div>
+          <div>
+            <ReactMarkdown>{post.Heading}</ReactMarkdown>
+          </div>
+          <div className={Style.hr}></div>
         </div>
         <div className={Style.info}>
           Dubai is home to some of the biggest and best theme parks worldwide.
@@ -49,7 +53,8 @@ export default function FourColumn({ id }) {
             return (
               <div className={Style.FourColumn} key={key}>
                 <Link to={`/product/${value.id}`}>
-                  <Card type="fourColumn" value={value} />
+                  {console.log(value)}
+                  <FourCard type="fourColumn" value={value} />
                 </Link>
               </div>
             );
@@ -67,7 +72,7 @@ export function FourColumnContent({ data }) {
     <div className={Style.FourColumnContentContainer}>
       <ReactMarkdown>{state ? data : data.substring(0, 20)}</ReactMarkdown>
       <p onClick={() => setstate(!state)} className={Style.readMore}>
-        {data.length < 200 ? null : state ? "Read Less" : "Read More"}
+        {data.length < 200 ? null : state ? 'Read Less' : 'Read More'}
       </p>
     </div>
   );

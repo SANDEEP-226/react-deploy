@@ -1,63 +1,52 @@
-.cardContainer{
-    height: 100%;
-    min-height:auto ; 
-    max-height: 800px;
-    box-shadow: rgb(0 0 0 / 7%) 0px 12px 20px;
-    border: 1px solid rgb(235, 235, 235); 
-    margin: 4% 0px;
-    overflow: hidden;
-    /* overflow-y: scroll;
+.cardContainer {
+  height: 100%;
+  min-height: auto;
+  /* max-height: 800px; */
+  box-shadow: 0px 0px 40px 7px rgba(193, 193, 193, 0.25);
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 30px;
+  margin: 4% 0px;
+  overflow: hidden;
+  /* overflow-y: scroll;
     padding-bottom: 20px; */
 }
-.imageContainer{
-    height: 80%;
+.imageContainer {
+  height: 80%;
 }
-.imageContainer img{
-    padding-top: 2rem;
-    /* height: 240px; */ 
-    width: 100%;
-    object-fit: fill;
+.imageContainer img {
+  padding-top: 2rem;
+  /* height: 240px; */
+  width: 100%;
+  object-fit: fill;
 }
-.contentContainer{
-    position: relative;
+.contentContainer {
+  position: relative;
+  height: auto;
 }
-.large{
-    height: 300px;
+.large {
+  height: 300px;
 }
-.medium{
-    height: 235px;
+.medium {
+  height: 235px;
 }
-.small{
-    height: 200px;
+.small {
+  height: 200px;
 }
 
 @media only screen and (min-width: 1441px) {
-    /* Large Size Devices */
-
-
-
+  /* Large Size Devices */
 }
-@media only screen and (min-width: 1025px) and (max-width: 1440px){
-/* Default size devices */
-
-
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Default size devices */
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-/* Tablet size devices */
-
-
-
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet size devices */
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
-/* Medium size devices */
-
-
-
+  /* Medium size devices */
 }
 
 @media only screen and (max-width: 425px) {
-/* Small devices */
-
-
+  /* Small devices */
 }

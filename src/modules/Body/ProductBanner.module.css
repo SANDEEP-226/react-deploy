@@ -1,0 +1,52 @@
+.wrapper {
+  width: 100%;
+  height: 570px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.Container {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 200px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+.Banner_Title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+  color: #ffffff;
+}
+.Banner_Content {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.ck_btn {
+  width: 60%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  /* identical to box height */
+  padding: 25px 80px;
+  color: #ffffff;
+  background: #277cfc;
+  border-radius: 10px;
+}

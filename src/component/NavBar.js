@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Style from "../modules/NavBar/NavBar.module.css";
-import image from "./../assets/DubaiLogo.png";
-import data from "./../Json/NavBarContent.json";
-import { FiChevronDown } from "react-icons/fi";
-import DropDown from "./NavBar/DropDown";
-import axios from "axios";
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
-import SideBar from "./NavBar/SideBar";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Style from '../modules/NavBar/NavBar.module.css';
+import image from './../assets/DubaiLogo.png';
+import data from './../Json/NavBarContent.json';
+import { FiChevronDown } from 'react-icons/fi';
+import DropDown from './NavBar/DropDown';
+import axios from 'axios';
+import { FaBars } from 'react-icons/fa';
+import { AiOutlineClose } from 'react-icons/ai';
+import SideBar from './NavBar/SideBar';
 
 export default function NavBar() {
   const [dropdown, setDropdown] = useState(false);
 
   const baseURL =
-    "http://localhost:1337/api/hey-himalayas/1?populate[0]=Nav&populate[1]=Nav.Logo&populate[2]=Nav.Link_Item.Sub_Link";
+    'http://localhost:1337/api/hey-himalayas/1?populate[0]=Nav&populate[1]=Nav.Logo&populate[2]=Nav.Link_Item.Sub_Link';
   const [post, setPost] = useState(null);
   const [sideBarFlag, setSideBarFlag] = useState(false);
 
@@ -38,7 +38,7 @@ export default function NavBar() {
     return null;
   }
 
-  const image = "http://localhost:1337" + post[0].Logo.data.attributes.url;
+  const image = 'http://localhost:1337' + post[0].Logo.data.attributes.url;
   const data = post[0].Link_Item;
   // var dropDownArray = new Array(no_of_items).fill(false);
   // console.log("Navvvvvvv");
@@ -73,7 +73,7 @@ export default function NavBar() {
                     <div>{value.Heading}</div>
                   </a>
                   <div>
-                    {value.Sub_Link.length > 0 ? <FiChevronDown /> : ""}
+                    {value.Sub_Link.length > 0 ? <FiChevronDown /> : ''}
                   </div>
                 </div>
                 <div>

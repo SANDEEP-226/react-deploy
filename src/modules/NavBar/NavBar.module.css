@@ -6,16 +6,12 @@
   position: relative;
 }
 
-a {
-  color: #000;
-}
-
 .wrapper {
   height: 80px;
   position: sticky;
   top: 0px;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background: #1a1a1a;
   display: flex;
   justify-content: center;
   left: 0px;
@@ -27,16 +23,25 @@ a {
   height: 100%;
 }
 .leftContainer img {
-  width: 80px;
-  height: 80px;
+  height: 35.56px;
+  width: 160px;
+  left: 100px;
+  top: 22px;
+  border-radius: 0px;
 }
 .content {
   display: flex;
   margin: 0px 15px;
   align-items: center;
+  color: #ffffff;
   justify-content: center;
   cursor: pointer;
   height: 80px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
 }
 .content div {
   padding-right: 1rem;
@@ -61,44 +66,43 @@ a {
     display: flex;
     font-size: 0.8rem;
   }
-  @media only screen and (min-width: 1025px) and (max-width: 1440px){
-    /* Default size devices */
-  
-  
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Default size devices */
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet size devices */
+  .rightContainer {
+    display: flex;
+    font-size: 0.8rem;
   }
-  @media only screen and (min-width: 768px) and (max-width: 1024px){
-      /* Tablet size devices */
-      .rightContainer{
-        display: flex;
-        font-size: 0.8rem;
-    }
-    
-    
-    }
-    
-    @media only screen and (min-width: 426px) and (max-width: 768px) {
-      /* Medium size devices */
-      .content div{
-        padding-right: 1rem;
-    } 
-    .rightContainer{
-        /* display: none; */
-        position: absolute;
-        top: 70px;
-        display: flex;
-        flex-direction: column;
-        right: 0px;
-        z-index: 1;
-        background-color: rgb(255, 255, 255);
-        box-shadow: rgb(0 0 0 / 10%) 0px 0px 1em 1px;
-    }
-    .content {
-        border-bottom: 1px solid rgb(235, 235, 235);
-    }
-    .rightBar{
-        cursor: pointer;
-        display: block;
-        font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  /* Medium size devices */
+  .content div {
+    padding-right: 1rem;
+  }
+  .rightContainer {
+    /* display: none; */
+    position: absolute;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 1em 1px;
+  }
+  .content {
+    border-bottom: 1px solid rgb(235, 235, 235);
+  }
+  .rightBar {
+    cursor: pointer;
+    display: block;
+    font-size: 1.8rem;
+  }
+}
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   /* Medium size devices */
