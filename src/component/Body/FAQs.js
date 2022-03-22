@@ -13,17 +13,11 @@ export default function FAQs({ id }) {
   const [post, setPost] = React.useState(null);
   const [state, setstate] = useState(false);
 
-  // console.log("Two",id);
-  // const { data , error } = useFetch(baseURL);
-
   React.useEffect(() => {
     axios
       .get(baseURL)
       .then((response) => {
-        // console.log("FAQ");
-        // console.log(JSON.stringify(response.data.data.attributes.Content[id]));
         setPost(response.data.data.attributes.Content[id]);
-        // console.log(Object.keys(response.data.data.attributes));
       })
       .catch((error) => {
         console.log(error);
@@ -31,9 +25,6 @@ export default function FAQs({ id }) {
   }, []);
 
   if (!post) return null;
-  // console.log(post.SingleQnA);
-  // console.log("------");
-  // console.log(data);
   return (
         <div className={
           post.Grey_Background == true ? inStyle.Grey_BackgroundBox : inStyle.White_BackgroundBox
@@ -42,7 +33,6 @@ export default function FAQs({ id }) {
               <div className={inStyle.container}>
                 <h2 className={Style.h2}><ReactMarkdown>{post.Heading}</ReactMarkdown></h2>
                 {post.SingleQnA.map((value, key) => {
-                  // console.log(value,key);
                   return (
                     <div key={key} className={inStyle.content}>
                       <div

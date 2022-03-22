@@ -37,12 +37,9 @@ export default function Card({type , value}) {
   return (
        
             <div className={Style.cardContainer}>
-                 <Link to={ `/product/${value.id}`}>
                  <div className={Style.imageContainer }>
                     <img src={img} style={{height:findHeight(type)}} />
-                </div>
-                 </Link>
-                
+                </div>                
                 <div className={Style.contentContainer}>
                     {Switch(type,value.Content)}
                 </div>
