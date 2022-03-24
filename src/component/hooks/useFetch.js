@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import axios from 'axios';
 
 export const getStrapiData = (urlQuery) => {
-  const url = "http://localhost:1337/api/hey-himalayas/1?" + urlQuery;
+  const url = 'http://localhost:1337/api/hey-himalayas/1?' + urlQuery;
   return new Promise((resolve, reject) => {
     axios
       .get(url)

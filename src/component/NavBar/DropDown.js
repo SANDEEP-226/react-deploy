@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Style from "./../../modules/NavBar/DropDown.module.css";
+import React, { useState } from 'react';
+import Style from './../../modules/NavBar/DropDown.module.css';
 
 export default function DropDown(param) {
   const [dropdown, setDropdown] = useState(false);
@@ -9,7 +9,7 @@ export default function DropDown(param) {
       <ul>
         {data.map((value, key) => {
           return (
-            <a href={value.Link_Url}>
+            <a key={key} href={value.Link_Url}>
               <li>{value.Link_Name}</li>
             </a>
           );

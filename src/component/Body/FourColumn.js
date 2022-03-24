@@ -4,11 +4,9 @@ import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import Style from './../../modules/Body/Column.module.css';
 import root from '../../modules/responsive.module.css';
-import data from './../../Json/ColumnCotent.json';
 import FourCard from './FourCard';
-export default function FourColumn({ id }) {
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][Cards][populate]=*';
+export default function FourColumn({ id, pageType, pageId }) {
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate][Cards][populate]=*`;
   const [post, setPost] = React.useState(null);
 
   React.useEffect(() => {
@@ -16,6 +14,7 @@ export default function FourColumn({ id }) {
       .get(baseURL)
       .then((response) => {
         setPost(response.data.data.attributes.Content[id]);
+        console.log(response.data.data.attributes.Content[id]);
       })
       .catch((error) => {
         console.log(error);
@@ -53,7 +52,6 @@ export default function FourColumn({ id }) {
             return (
               <div className={Style.FourColumn} key={key}>
                 <Link to={`/product/${value.id}`}>
-                  {console.log(value)}
                   <FourCard type="fourColumn" value={value} />
                 </Link>
               </div>

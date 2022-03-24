@@ -5,12 +5,10 @@ import { BsPlus } from 'react-icons/bs';
 import { AiOutlineMinus } from 'react-icons/ai';
 
 import ReactMarkdown from 'react-markdown';
-import data from './../../Json/FAQ.json';
 import axios from 'axios';
 
-export default function FAQs({ id }) {
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][SingleQnA][populate]=*';
+export default function FAQs({ id, pageType, pageId }) {
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate][SingleQnA][populate]=*`;
   const [post, setPost] = React.useState(null);
   const [state, setstate] = useState(false);
 
@@ -65,9 +63,9 @@ export default function FAQs({ id }) {
                   </div>
                 </div>
                 <div className={value.status ? inStyle.view : inStyle.hide}>
-                  <p className={inStyle.para}>
+                  <div className={inStyle.para}>
                     <ReactMarkdown>{'A. ' + value.Answer}</ReactMarkdown>
-                  </p>
+                  </div>
                 </div>
               </div>
             );
