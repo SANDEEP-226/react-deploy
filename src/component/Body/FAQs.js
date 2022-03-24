@@ -65,9 +65,9 @@ export default function FAQs({ id }) {
                   </div>
                 </div>
                 <div className={value.status ? inStyle.view : inStyle.hide}>
-                  <p className={inStyle.para}>
+                  <div className={inStyle.para}>
                     <ReactMarkdown>{'A. ' + value.Answer}</ReactMarkdown>
-                  </p>
+                  </div>
                 </div>
               </div>
             );

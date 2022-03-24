@@ -8,17 +8,18 @@ import FeatureCard from './Body/FeatureCard';
 import Highlighter from './Body/Highlighter';
 import FAQs from './Body/FAQs';
 import QuickLinks from './Body/QuickLinks';
-import ProductBanner from './Body/ProductBanner';
+// import ProductBanner from './Body/ProductBanner';
+import Banner from './Body/Banner';
 import FourCard from './Body/FourCard';
+import TextComponent from './Body/TextComponent';
 
 function getColumn(size, key) {
-  // console.log(key);
   switch (size) {
-    case 'Large':
+    case 'Two_column_layout':
       return <TwoColumn id={key} />;
-    case 'Medium':
+    case 'Three_column_layout':
       return <ThreeColumn id={key} />;
-    case 'Small':
+    case 'Four_column_layout':
       return <FourColumn id={key} />;
     default:
       return '';
@@ -38,6 +39,10 @@ function getComponent(name, variant, key) {
     case 'quick-links':
       return <QuickLinks id={key} />;
 
+    case 'tab-highlighter':
+      return <Highlighter id={key} />;
+    case 'only-text':
+      return <TextComponent id={key} />;
     default:
       return 'NULL';
   }
@@ -63,7 +68,8 @@ export default function Body() {
   }
   return (
     <div className={Style.wrapper}>
-      <ProductBanner />
+      {/* <ProductBanner /> */}
+
       {post.map((value, key) => {
         return (
           <div key={key} className={Style.wrapper}>
