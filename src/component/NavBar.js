@@ -12,9 +12,8 @@ import SideBar from './NavBar/SideBar';
 
 export default function NavBar() {
   const [dropdown, setDropdown] = useState(false);
-
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[0]=Nav&populate[1]=Nav.Logo&populate[2]=Nav.Link_Item.Sub_Link';
+  const pageId = process.env.REACT_APP_STRAPI_HOME_PAGE_ID;
+  const baseURL = `http://localhost:1337/api/hey-himalayas/${pageId}?populate[0]=Nav&populate[1]=Nav.Logo&populate[2]=Nav.Link_Item.Sub_Link`;
   const [post, setPost] = useState(null);
   const [sideBarFlag, setSideBarFlag] = useState(false);
 
@@ -22,11 +21,7 @@ export default function NavBar() {
     axios
       .get(baseURL)
       .then((response) => {
-        // console.log("Navbar");
-        // console.log(JSON.stringify(response.data.data.attributes.Nav));
-        // console.log(JSON.stringify(response.data.data.attributes.Content[1].Variant));
         setPost(response.data.data.attributes.Nav);
-        // console.log(Object.keys(response.data.data.attributes));
       })
       .catch((error) => {
         console.log(error);

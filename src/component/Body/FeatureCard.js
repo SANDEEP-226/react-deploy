@@ -1,12 +1,10 @@
 import React from 'react';
 import Style from './../../modules/Body/FeatureCard.module.css';
 import ReactMarkdown from 'react-markdown';
-// import imgwsac from "../../assets/Ban4.jpeg"
 import axios from 'axios';
 
-export default function FeatureCard({ id }) {
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][Image][populate]=*';
+export default function FeatureCard({ id, pageType, pageId }) {
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate][Image][populate]=*`;
   const [post, setPost] = React.useState(null);
   React.useEffect(() => {
     axios
@@ -15,7 +13,7 @@ export default function FeatureCard({ id }) {
         setPost(response.data.data.attributes.Content[id]);
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error.message);
       });
   }, []);
 
