@@ -52,7 +52,6 @@ export default function FourColumn({ id, pageType, pageId }) {
             return (
               <div className={Style.FourColumn} key={key}>
                 <Link to={`/product/${value.id}`}>
-                  {console.log(value)}
                   <FourCard type="fourColumn" value={value} />
                 </Link>
               </div>

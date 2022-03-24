@@ -9,6 +9,10 @@ import Highlighter from './Body/Highlighter';
 import FAQs from './Body/FAQs';
 import QuickLinks from './Body/QuickLinks';
 import ProductBanner from './Body/ProductBanner';
+// import ProductBanner from './Body/ProductBanner';
+import Banner from './Body/Banner';
+import FourCard from './Body/FourCard';
+import TextComponent from './Body/TextComponent';
 
 export default function Body() {
   const pageId = process.env.REACT_APP_STRAPI_HOME_PAGE_ID;
@@ -54,6 +58,11 @@ export default function Body() {
       case 'quick-links':
         return <QuickLinks id={key} pageType="hey-himalayas" pageId={pageId} />;
 
+      case 'tab-highlighter':
+        return <Highlighter id={key} />;
+      case 'only-text':
+        return <TextComponent id={key} />;
+
       default:
         return 'NULL';
     }
@@ -64,7 +73,8 @@ export default function Body() {
   }
   return (
     <div className={Style.wrapper}>
-      <ProductBanner />
+      {/* <ProductBanner /> */}
+
       {post.map((value, key) => {
         return (
           <div key={key} className={Style.wrapper}>

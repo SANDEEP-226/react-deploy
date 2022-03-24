@@ -49,13 +49,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 157.5%;
   color: #3a3a3a;
+  padding-bottom: 0px;
+  padding-top: 20px;
 }
 
 .hr {
@@ -88,7 +89,6 @@
 }
 .ThreeColumn {
   width: 32%;
-  /* padding-right: 1rem; */
 }
 .ThreeTitle h3 {
   font-size: 1.4rem;
@@ -114,13 +114,10 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 157.5%;
-  /* identical to box height, or 32px */
-
   color: #333333;
 }
 .FourColumn {
   width: 22%;
-  /* padding-right: 1.5rem; */
   cursor: pointer;
   min-height: 100px;
 }
@@ -130,8 +127,6 @@
 }
 .FourColumnContentContainer {
   color: black;
-  /* display: flex;
-    justify-content: space-between; */
   min-height: auto;
   padding: 0rem 0.6rem;
   line-height: 1.3rem;
