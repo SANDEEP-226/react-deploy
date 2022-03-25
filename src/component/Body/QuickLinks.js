@@ -1,12 +1,10 @@
 import React from 'react';
 import Style from './../../modules/Body/QuickLinks.module.css';
-import data from './../../Json/QuickLinks.json';
 import ReactMarkdown from 'react-markdown';
 import axios from 'axios';
 
-export default function QuickLinks({ id }) {
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][One_Category][populate]=*';
+export default function QuickLinks({ id, pageType, pageId }) {
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate][One_Category][populate]=*`;
   const [post, setPost] = React.useState(null);
   React.useEffect(() => {
     axios
@@ -15,7 +13,7 @@ export default function QuickLinks({ id }) {
         setPost(response.data.data.attributes.Content[id]);
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error.message);
       });
   }, []);
 

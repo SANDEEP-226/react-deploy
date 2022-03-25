@@ -5,20 +5,23 @@ import Body from './component/Body';
 import NavBar from './component/NavBar';
 import Footer from './component/Footer';
 import Product from './component/Product';
-import Banner from './component/Body/Banner';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './component/Header';
+import PageBody from './component/PageBody';
+import PageRenderer from './component/PageRenderer';
 
 function App() {
   return (
     <div className="container">
       <Router>
         <NavBar />
-        {/* <Banner /> */}
         <Routes className="center">
           <Route path="/" exact element={<Body />} />
+          {
+            //       <Route path="/:routeName/:pageId" exact element={<PageBody />} />
+          }
+          <Route path="/:routeName" exact element={<PageRenderer />} />
           <Route path="/product/:productId" element={<Product />} />
-          <Route>404 not found!</Route>
+          <Route path="*" element={<h1>404 PAGE NOT FOUND</h1>} />
         </Routes>
       </Router>
       <Header />

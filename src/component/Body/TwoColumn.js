@@ -8,24 +8,25 @@ import { getStrapiData } from './../hooks/useFetch';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import ReactMarkdown from 'react-markdown';
 
-export default function TwoColumn({ id }) {
+export default function TwoColumn({ id, pageType, pageId }) {
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate][Cards][populate]=*`;
 
   const baseURLQuery = 'populate[Content][populate][Cards][populate]=*';
   useEffect(() => {
-    getStrapiData(baseURLQuery)
+    axios
+      .get(baseURL)
       .then((response) => {
         setPost(response.data.data.attributes.Content[id]);
-        setLoading(false);
+        console.log(response.data.data.attributes.Content[id]);
       })
       .catch((error) => {
         console.log(error);
-        setLoading(false);
       });
   }, []);
 
-  if (loading) return <div> loading... </div>;
+  // if (loading) return <div> loading... </div>;
   if (!post) return null;
   return (
     <div

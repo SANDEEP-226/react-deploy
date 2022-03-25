@@ -6,9 +6,8 @@ import root from '../../modules/responsive.module.css';
 import Card from './Card';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
-export default function ThreeColumn({ id }) {
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][Cards][populate]=*';
+export default function ThreeColumn({ id, pageType, pageId }) {
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate][Cards][populate]=*`;
   const [post, setPost] = React.useState(null);
   React.useEffect(() => {
     axios

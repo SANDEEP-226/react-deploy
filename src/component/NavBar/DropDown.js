@@ -9,7 +9,7 @@ export default function DropDown(param) {
       <ul>
         {data.map((value, key) => {
           return (
-            <a href={value.Link_Url}>
+            <a key={key} href={value.Link_Url}>
               <li>{value.Link_Name}</li>
             </a>
           );

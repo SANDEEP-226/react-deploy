@@ -9,7 +9,6 @@ import Highlighter from './Body/Highlighter';
 import FAQs from './Body/FAQs';
 import QuickLinks from './Body/QuickLinks';
 import ProductBanner from './Body/ProductBanner';
-// import Banner from './Body/Banner';
 import FourCard from './Body/FourCard';
 import Footer from './Footer';
 import TextComponent from './Body/TextComponent';
@@ -52,7 +51,8 @@ function getComponent(name, variant, key) {
 }
 
 export default function Body() {
-  const baseURL = 'http://localhost:1337/api/hey-himalayas/1?populate=*';
+  const pageId = process.env.REACT_APP_STRAPI_HOME_PAGE_ID;
+  const baseURL = `http://localhost:1337/api/hey-himalayas/${pageId}?populate=*`;
   const [post, setPost] = useState(null);
 
   useEffect(() => {
@@ -65,6 +65,44 @@ export default function Body() {
         console.log(error);
       });
   }, []);
+
+  function getColumn(size, key) {
+    switch (size) {
+      case 'Two_column_layout':
+        return <TwoColumn id={key} />;
+      case 'Three_column_layout':
+        return <ThreeColumn id={key} pageType="hey-himalayas" />;
+      case 'Four_column_layout':
+        return <FourColumn id={key} pageType="hey-himalayas" />;
+      default:
+        return '';
+    }
+  }
+
+  function getComponent(name, variant, key) {
+    switch (name) {
+      case 'basic-card-component':
+        return getColumn(variant, key);
+      case 'half-half':
+        return (
+          <FeatureCard id={key} pageType="hey-himalayas" pageId={pageId} />
+        );
+
+      case 'qn-a':
+        return <FAQs id={key} pageType="hey-himalayas" pageId={pageId} />;
+
+      case 'quick-links':
+        return <QuickLinks id={key} pageType="hey-himalayas" pageId={pageId} />;
+
+      case 'tab-highlighter':
+        return <Highlighter id={key} />;
+      case 'only-text':
+        return <TextComponent id={key} />;
+
+      default:
+        return 'NULL';
+    }
+  }
 
   if (!post) {
     return null;
@@ -82,20 +120,4 @@ export default function Body() {
       })}
     </div>
   );
-}
-
-{
-  /* <TwoColumn/>
-        <ThreeColumn/>
-        <FourColumn/>
-        <br/>
-        <br/>
-        <br/>
-        <FeatureCard/>
-        <br/>
-        <br/>
-        <Highlighter/>
-        <br/>
-        <FAQs/>
-        <QuickLinks/> */
 }
