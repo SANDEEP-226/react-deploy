@@ -17,7 +17,7 @@ export default function FourColumn({ id, pageType, pageId }) {
         console.log(response.data.data.attributes.Content[id]);
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error.message);
       });
   }, []);
 
