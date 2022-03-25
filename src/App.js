@@ -7,6 +7,7 @@ import Footer from './component/Footer';
 import Product from './component/Product';
 import Banner from './component/Body/Banner';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './component/Header';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           <Route path="/product/:productId" element={<Product />} />
           <Route>404 not found!</Route>
         </Routes>
-        <Footer />
       </Router>
+      <Header />
+      <Footer />
     </div>
   );
 }
