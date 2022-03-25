@@ -43,7 +43,10 @@ export default function VariantCard({ data }) {
           <div className={Style.presentPrice}>INR 2,499</div>
           <div className={Style.offerTag}>30% OFF</div>
         </div>
-        <div className={Style.row3}>Check Availability</div>
+        <div className={Style.row3}>
+          <div className={Style.Visit}>View More+</div>
+          <div className={Style.checkAvl}>Check Availability</div>
+        </div>
       </div>
     </div>
   );

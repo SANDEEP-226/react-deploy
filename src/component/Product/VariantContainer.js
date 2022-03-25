@@ -8,17 +8,11 @@ export default function VariantContainer() {
     <div className={Style.wrapper}>
       <div className={Style.header1}>
         <div className={Style.hr}></div>
-        <div>
-          Select Your Experience
-          {/* <ReactMarkdown>{post.Heading}</ReactMarkdown> */}
-        </div>
+        <div className={Style.Heading}>Select your variant</div>
         <div className={Style.hr}></div>
       </div>
 
       <div className={Style.cardContainer}>
-        <div className={Style.card}>
-          <VariantCard data={data} />
-        </div>
         <div className={Style.card}>
           <VariantCard data={data} />
         </div>

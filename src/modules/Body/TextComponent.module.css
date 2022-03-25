@@ -27,13 +27,23 @@
 
 .hr {
   height: 1px;
-  width: 300px;
-  min-width: 10px;
-  max-width: 300px;
+  width: 250px;
   background-color: #f47625;
+  flex: 1;
+}
+.Heading {
+  margin: 0px 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 157.5%;
+  /* or 47px */
+
+  color: #3a3a3a;
 }
 
-.content {
+.Description {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -41,11 +51,28 @@
   line-height: 200.5%;
   /* or 40px */
   padding: 0px 10px;
-
+  padding-bottom: 25px;
   color: #626262;
 }
-.content li {
+
+.Description li {
   margin-left: 30px;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .Heading {
+    font-size: 23px;
+  }
+  .Description {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .Heading {
+    font-size: 20px;
+  }
+  .Description {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
@@ -54,16 +81,24 @@
     font-size: 17px;
     line-height: 157.5%;
   }
+  .Heading {
+    font-size: 17px;
+  }
   .content li {
     margin-left: 30px;
   }
   .hr {
     width: 60px;
   }
-  .content {
+  .Description {
     padding: 0px 10px;
     font-weight: 400;
     font-size: 12px;
     line-height: 200.5%;
+  }
+}
+@media only screen and (min-width: 399px) {
+  .Heading {
+    font-size: 15px;
   }
 }

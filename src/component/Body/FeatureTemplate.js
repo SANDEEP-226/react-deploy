@@ -23,7 +23,7 @@ export default function FeatureTemplate({ id, content, url }) {
             <div>
               {content.length < 200 ? null : state ? 'Read Less' : 'Read More'}
             </div>
-            <div>
+            <div className={Style.arrowRight}>
               {content.length < 200 ? null : <HiOutlineArrowNarrowRight />}
             </div>
           </div>
