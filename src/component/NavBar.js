@@ -4,6 +4,7 @@ import Style from '../modules/NavBar/NavBar.module.css';
 import image from './../assets/DubaiLogo.png';
 import data from './../Json/NavBarContent.json';
 import { FiChevronDown } from 'react-icons/fi';
+import { IoIosArrowUp } from 'react-icons/io';
 import DropDown from './NavBar/DropDown';
 import axios from 'axios';
 import { FaBars } from 'react-icons/fa';
@@ -40,17 +41,11 @@ export default function NavBar() {
 
   const image = 'http://localhost:1337' + post[0].Logo.data.attributes.url;
   const data = post[0].Link_Item;
-  // var dropDownArray = new Array(no_of_items).fill(false);
-  // console.log("Navvvvvvv");
-  // console.log(no_of_items);
-  // console.log();
-
   return (
     <div className={Style.wrapper}>
       <div className={Style.container}>
         <Link to={`/`}>
           <div className={Style.leftContainer}>
-            {/* {console.log(post[0].Logo.data.attributes.url)} */}
             <img src={image} />
           </div>
         </Link>
@@ -61,7 +56,7 @@ export default function NavBar() {
         >
           {post[0].Link_Item.map((value, key) => {
             return (
-              <div key={key}>
+              <div key={key} className={Style.DropContentContainer}>
                 <div
                   className={Style.content}
                   onClick={() => {
@@ -72,11 +67,19 @@ export default function NavBar() {
                   <a href={value.Header_Link}>
                     <div>{value.Heading}</div>
                   </a>
-                  <div>
-                    {value.Sub_Link.length > 0 ? <FiChevronDown /> : ''}
+                  <div className={Style.reactIcon}>
+                    {value.Sub_Link.length > 0 ? (
+                      value.status ? (
+                        <IoIosArrowUp />
+                      ) : (
+                        <FiChevronDown />
+                      )
+                    ) : (
+                      ''
+                    )}
                   </div>
                 </div>
-                <div>
+                <div className={Style.DropDownContainer}>
                   {value.status && value.Sub_Link.length > 0 && (
                     <DropDown content={value.Sub_Link} />
                   )}

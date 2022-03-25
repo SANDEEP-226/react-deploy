@@ -42,13 +42,10 @@ export default function FourColumn({ id }) {
           <div className={Style.hr}></div>
         </div>
         <div className={Style.info}>
-          Dubai is home to some of the biggest and best theme parks worldwide.
-          From daring rides to family-friendly experiences, the city brings a
-          variety of options for you to explore. Here is our list of best theme
-          park attractions in Dubai worth visiting!
+          <ReactMarkdown>{post.Heading_description}</ReactMarkdown>
         </div>
         <br />
-        <div className={Style.columnContainer}>
+        <div className={Style.columnContainer4}>
           {post.Cards.map((value, key) => {
             return (
               <div className={Style.FourColumn} key={key}>

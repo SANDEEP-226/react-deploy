@@ -9,22 +9,32 @@ var toggleArray = [];
 function toggle(key, toggleArray) {
   toggleArray.fill(false);
   toggleArray[key] = true;
-  console.log(toggleArray[key], '------------------');
+  console.log(toggleArray, key, '------------------');
 }
 
 export default function Highlighter({ id }) {
   const [post, setPost] = useState(null);
+  const [state, setstate] = useState('');
   const [content, setContent] = useState('');
   const [url, setUrl] = useState('');
-  const [state, setstate] = useState('');
   const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][Tabs][populate][Tab_content][populate]=*';
+    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][tab][populate][Image][populate]=*';
   useEffect(async () => {
     await axios
       .get(baseURL)
       .then((response) => {
         setPost(response.data.data.attributes.Content[id]);
-        toggleArray = new Array(post.Tabs.length).fill(false);
+        let post = response.data.data.attributes.Content[id];
+        let firstCard = post.tab[0];
+        setstate(firstCard.Tab_name);
+        setContent(firstCard.Content);
+        setUrl(firstCard.Image.data.attributes.url);
+        toggleArray = new Array(post.tab.length).fill(false);
+        toggleArray[0] = true;
+
+        document.getElementById('highlight-card-1').click();
+        document.getElementById('highlight-card-2').click();
+        document.getElementById('highlight-card-1').click();
       })
       .catch((error) => {
         console.log(error);
@@ -40,15 +50,18 @@ export default function Highlighter({ id }) {
         <div className={Style.hr}></div>
       </div>
       <div className={Style.highlighterList}>
-        <ul>
-          {post.Tabs.map((value, key) => {
+        <ul className={Style.highlighterItems}>
+          {post.tab.map((value, key) => {
             return (
               <li
+                id={`highlight-card-${key + 1}`}
                 key={key}
                 onClick={() => {
+                  console.log('clicked');
                   setstate(value.Tab_name);
-                  setContent(value.Tab_content.Content);
-                  setUrl(value.Tab_content.Image.data.attributes.url);
+                  setContent(value.Content);
+                  setUrl(value.Image.data.attributes.url);
+
                   toggle(key, toggleArray);
                 }}
                 className={toggleArray[key] ? Style.active : null}
@@ -65,16 +78,6 @@ export default function Highlighter({ id }) {
     </div>
   );
 }
-
-// setstate(response.data.data.attributes.Content[id].Tabs[0].Tab_name);
-// setContent(
-//   response.data.data.attributes.Content[id].Tabs[0].Tab_content.Content
-// );
-// setUrl(
-//   'https://localhost:1337' +
-//     response.data.data.attributes.Content[id].Tabs[0].Tab_content.Image.data
-//       .attributes.url
-// );
 function Switch(state, content, url) {
   switch (state) {
     case 'Travel Essential':

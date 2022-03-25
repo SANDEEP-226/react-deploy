@@ -13,7 +13,7 @@ function App() {
     <div className="container">
       <Router>
         <NavBar />
-        <Banner />
+        {/* <Banner /> */}
         <Routes className="center">
           <Route path="/" exact element={<Body />} />
           <Route path="/product/:productId" element={<Product />} />

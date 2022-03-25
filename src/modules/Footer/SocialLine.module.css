@@ -1,5 +1,14 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0px;
+}
 .cointainer {
   /* background-color: tomato; */
+  position: relative;
   align-self: center;
   display: flex;
   justify-content: space-around;
@@ -9,4 +18,7 @@
 .icons {
   /* font-size: 1.5rem; */
   color: #999;
+}
+.Icon_container {
+  margin: 0px 10px;
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import root from '../../modules/responsive.module.css';
+import root1 from '../../modules/HeaderResponsiv.module.css';
 import Style from './../../modules/Body/Column.module.css';
 import Card from './Card';
 import { getStrapiData } from './../hooks/useFetch';
@@ -37,9 +38,9 @@ export default function TwoColumn({ id }) {
       <div
         className={`${Style.row} ${root.md_col_11} ${root.sm_col_10} ${root.tb_col_10} ${root.col_10}  ${root.l_col_11}`}
       >
-        <div className={Style.header}>
+        <div className={` ${Style.header}`}>
           <div className={Style.hr}></div>
-          <div className={Style.title}>
+          <div className={`${root1.mb_hdr_ft} ${Style.title}`}>
             <ReactMarkdown>{post.Heading}</ReactMarkdown>
           </div>
           <div className={Style.hr}></div>
@@ -62,7 +63,7 @@ export function TwoColumnContent({ data }) {
   const [state, setstate] = useState(false);
   return (
     <div className={Style.TwoColumnContentContainer}>
-      <ReactMarkdown>{state ? data : data.substring(0, 500)}</ReactMarkdown>
+      <ReactMarkdown>{state ? data : data.substring(0, 700)}</ReactMarkdown>
       <div onClick={() => setstate(!state)} className={Style.readMore2}>
         <div>
           {data.length < 200 ? null : state ? 'Read Less' : 'Read More'}

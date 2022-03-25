@@ -8,9 +8,10 @@ import FeatureCard from './Body/FeatureCard';
 import Highlighter from './Body/Highlighter';
 import FAQs from './Body/FAQs';
 import QuickLinks from './Body/QuickLinks';
-// import ProductBanner from './Body/ProductBanner';
-import Banner from './Body/Banner';
+import ProductBanner from './Body/ProductBanner';
+// import Banner from './Body/Banner';
 import FourCard from './Body/FourCard';
+import Footer from './Footer';
 import TextComponent from './Body/TextComponent';
 
 function getColumn(size, key) {
@@ -28,6 +29,8 @@ function getColumn(size, key) {
 
 function getComponent(name, variant, key) {
   switch (name) {
+    case 'image-carousel':
+      return <ProductBanner id={key} />;
     case 'basic-card-component':
       return getColumn(variant, key);
     case 'half-half':
@@ -72,12 +75,11 @@ export default function Body() {
 
       {post.map((value, key) => {
         return (
-          <div key={key} className={Style.wrapper}>
+          <div key={key} className={Style.container}>
             {getComponent(value.__component.substring(9), value.Variant, key)}
           </div>
         );
       })}
-      <Highlighter />
     </div>
   );
 }

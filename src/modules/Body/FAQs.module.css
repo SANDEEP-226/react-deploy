@@ -3,7 +3,7 @@
 }
 .wrapper {
   width: 85%;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 .container {
   width: 100%;
@@ -45,6 +45,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 157.5%;
+  padding: 15px 0px;
   /* identical to box height, or 32px */
 
   color: #3cb5f9;
@@ -55,12 +56,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
   line-height: 157.5%;
+  padding: 30px 0px;
   color: #3a3a3a;
 }
 .hr {
@@ -68,26 +69,29 @@
   width: 250px;
   background-color: #f47625;
 }
-.para {
-  font-size: 1rem;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 0px;
-  /* or 28px */
 
-  color: #a4a4a4;
-}
 .content {
   border: 1px solid #ffbd93;
   box-sizing: border-box;
   border-radius: 10px;
+  min-height: 10px;
+  height: auto;
+  max-height: 200px;
   padding: 0px 10px;
   margin: 20px 0px;
 }
 .view {
   display: block;
+  height: auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 157.5%;
+  /* or 16px */
+
+  color: #a4a4a4;
+  margin-bottom: 10px;
 }
 .hide {
   display: none;
@@ -113,7 +117,7 @@
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 768px) {
   /* Medium size devices */
 
   .wrapper h2 {
@@ -126,8 +130,36 @@
     font-size: 0.9rem;
   }
 }
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* Medium size devices */
+  .header1 {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 157.5%;
+    /* or 27px */
 
-@media only screen and (max-width: 425px) {
+    text-align: center;
+  }
+  .wrapper h2 {
+    font-size: 1.2rem;
+  }
+  .subHeader {
+    font-size: 1rem;
+  }
+
+  .subHeader {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 157.5%;
+  }
+  .view {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 157.5%;
+  }
+}
+
+@media only screen and (max-width: 399px) {
   /* Small devices */
   .wrapper h2 {
     font-size: 1.1rem;

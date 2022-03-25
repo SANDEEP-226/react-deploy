@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from './../../modules/Body/FourCard.module.css';
-
+import root from './../../modules/HeaderResponsiv.module.css';
 export default function FourCard({ value }) {
   const img = 'http://localhost:1337' + value.Image.data.attributes.url;
   return (

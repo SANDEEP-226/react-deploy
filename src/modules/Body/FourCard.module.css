@@ -9,7 +9,7 @@
 img {
   height: 100%;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: inherit;
   box-shadow: inherit;
 }
@@ -32,4 +32,18 @@ img {
   position: relative;
   top: 85%;
   left: 1rem;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .wrapper {
+    width: 172px;
+    height: 172px;
+    margin: 20px;
+  }
+  .text {
+    top: 80%;
+    font-weight: 500;
+    font-size: 12.384px;
+    line-height: 157.5%;
+  }
 }

@@ -1,5 +1,5 @@
 .container {
-  width: 100px;
+  width: 150px;
   top: 75px;
   font-size: 16px;
   line-height: 24px;
@@ -7,16 +7,11 @@
   font-family: sans-serif;
   color: rgb(102, 102, 102);
   background-color: rgb(255, 255, 255);
+  border-radius: 5px;
   box-shadow: rgb(0 0 0 / 10%) 0px 1px 1em 0px;
   position: absolute;
 }
-.container {
-  position: absolute;
-  width: 170px;
 
-  background: #ffffff;
-  border-radius: 5px;
-}
 .container ul {
   padding: 0px;
   margin: 0px;
@@ -54,10 +49,49 @@
   /* Tablet size devices */
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 768px) {
   /* Medium size devices */
+  .container {
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 100%;
+    color: #777777;
+    position: static;
+    box-shadow: none;
+    margin-left: 50px;
+    /* identical to box height */
+
+    color: #8f8f8f;
+  }
+  .container ul li:last-child {
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* Medium size devices */
+  .container {
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 100%;
+    color: #777777;
+    position: static;
+    box-shadow: none;
+    margin-left: 50px;
+    /* identical to box height */
+
+    color: #8f8f8f;
+  }
+
+  .container ul li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container ul li:hover {
+    background-color: rgba(244, 118, 37, 0.1);
+  }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 399px) {
   /* Small devices */
 }

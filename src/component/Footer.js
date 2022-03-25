@@ -1,7 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import ReactMarkdown from 'react-markdown';
+import SocilaLine from './Footer/SocialLine';
+
 import Style from './../modules/Footer/NewFooter.module.css';
 export default function Footer() {
-  return <div className={Style.wrapper}></div>;
+  const baseURL =
+    'http://localhost:1337/api/hey-himalayas/1?populate[Footer][populate]=*';
+  const [data, setdata] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get(baseURL)
+      .then((response) => {
+        const preparedData = response.data.data.attributes.Footer[0];
+        setdata(preparedData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  if (!data) {
+    return <h3>Loading...</h3>;
+  }
+  return (
+    <div className={Style.wrapper}>
+      <div className={Style.container}>
+        <div className={Style.Footer_Title}>Find Us</div>
+        <div>
+          <SocilaLine />
+        </div>
+        <div className={Style.Footer_Context}>
+          <ReactMarkdown>{data.Content}</ReactMarkdown>
+        </div>
+        <div className={Style.Footer_Copyright}>
+          <ReactMarkdown>{data.Copy_Right_Text}</ReactMarkdown>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 // import React, { useState, useEffect } from "react";

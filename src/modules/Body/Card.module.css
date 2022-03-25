@@ -17,7 +17,7 @@
   padding-top: 2rem;
   /* height: 240px; */
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .contentContainer {
   position: relative;
