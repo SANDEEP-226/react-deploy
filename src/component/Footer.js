@@ -5,8 +5,8 @@ import SocilaLine from './Footer/SocialLine';
 
 import Style from './../modules/Footer/NewFooter.module.css';
 export default function Footer() {
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Footer][populate]=*';
+  const pageId = process.env.REACT_APP_STRAPI_HOME_PAGE_ID;
+  const baseURL = `http://localhost:1337/api/hey-himalayas/${pageId}?populate[Footer][populate]=*`;
   const [data, setdata] = useState(null);
 
   useEffect(() => {

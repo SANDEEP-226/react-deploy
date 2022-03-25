@@ -14,7 +14,6 @@ export default function FourColumn({ id, pageType, pageId }) {
       .get(baseURL)
       .then((response) => {
         setPost(response.data.data.attributes.Content[id]);
-        console.log(response.data.data.attributes.Content[id]);
       })
       .catch((error) => {
         console.log(error.message);
@@ -35,12 +34,10 @@ export default function FourColumn({ id, pageType, pageId }) {
       >
         <div className={Style.header}>
           <div className={Style.hr}></div>
-          <div>
-            <ReactMarkdown>{post.Heading}</ReactMarkdown>
-          </div>
+          <div className={Style.HeadingText}>{post.Heading}</div>
           <div className={Style.hr}></div>
         </div>
-        <div className={Style.info}>
+        <div className={Style.Description}>
           <ReactMarkdown>{post.Heading_description}</ReactMarkdown>
         </div>
         <br />

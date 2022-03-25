@@ -19,7 +19,6 @@ export default function TwoColumn({ id, pageType, pageId }) {
       .get(baseURL)
       .then((response) => {
         setPost(response.data.data.attributes.Content[id]);
-        console.log(response.data.data.attributes.Content[id]);
       })
       .catch((error) => {
         console.log(error);
@@ -41,10 +40,11 @@ export default function TwoColumn({ id, pageType, pageId }) {
       >
         <div className={` ${Style.header}`}>
           <div className={Style.hr}></div>
-          <div className={`${root1.mb_hdr_ft} ${Style.title}`}>
-            <ReactMarkdown>{post.Heading}</ReactMarkdown>
-          </div>
+          <div className={Style.HeadingText}>{post.Heading}</div>
           <div className={Style.hr}></div>
+        </div>
+        <div className={Style.Description}>
+          <ReactMarkdown>{post.Heading_description}</ReactMarkdown>
         </div>
         <div className={Style.columnContainer}>
           {post.Cards.map((value, key) => {
@@ -64,13 +64,13 @@ export function TwoColumnContent({ data }) {
   const [state, setstate] = useState(false);
   return (
     <div className={Style.TwoColumnContentContainer}>
-      <ReactMarkdown>{state ? data : data.substring(0, 700)}</ReactMarkdown>
+      <ReactMarkdown>{state ? data : data.substring(0, 500)}</ReactMarkdown>
       <div onClick={() => setstate(!state)} className={Style.readMore2}>
         <div>
           {data.length < 200 ? null : state ? 'Read Less' : 'Read More'}
         </div>
-        <div>
-          <HiOutlineArrowNarrowRight />
+        <div className={Style.arrowRight}>
+          {data.length < 200 ? null : <HiOutlineArrowNarrowRight />}
         </div>
       </div>
     </div>

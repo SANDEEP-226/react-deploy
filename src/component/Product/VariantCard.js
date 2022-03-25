@@ -44,6 +44,10 @@ export default function VariantCard({ data }) {
           </div>
           <div className={Style.row3}>Check Availability</div>
         </div>
+        <div className={Style.row3}>
+          <div className={Style.Visit}>View More+</div>
+          <div className={Style.checkAvl}>Check Availability</div>
+        </div>
       </div>
     );
   });

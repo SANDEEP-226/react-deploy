@@ -4,21 +4,19 @@ import Style from './../../modules/Body/Highlighter.module.css';
 import { useState } from 'react';
 import FeatureTemplate from './FeatureTemplate';
 import { getStrapiData } from './../hooks/useFetch';
-
+import ReactMarkdown from 'react-markdown';
 var toggleArray = [];
 function toggle(key, toggleArray) {
   toggleArray.fill(false);
   toggleArray[key] = true;
-  console.log(toggleArray, key, '------------------');
 }
 
-export default function Highlighter({ id }) {
+export default function Highlighter({ id, pageType, pageId }) {
   const [post, setPost] = useState(null);
   const [state, setstate] = useState('');
   const [content, setContent] = useState('');
   const [url, setUrl] = useState('');
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate][tab][populate][Image][populate]=*';
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate][tab][populate][Image][populate]=*`;
   useEffect(async () => {
     await axios
       .get(baseURL)
@@ -46,8 +44,11 @@ export default function Highlighter({ id }) {
     <div className={Style.row}>
       <div className={Style.header}>
         <div className={Style.hr}></div>
-        <div className={Style.title}>{post.Heading}</div>
+        <div className={Style.HeadingText}>{post.Heading}</div>
         <div className={Style.hr}></div>
+      </div>
+      <div className={Style.Description}>
+        <ReactMarkdown>{post.Heading_description}</ReactMarkdown>
       </div>
       <div className={Style.highlighterList}>
         <ul className={Style.highlighterItems}>
@@ -57,7 +58,6 @@ export default function Highlighter({ id }) {
                 id={`highlight-card-${key + 1}`}
                 key={key}
                 onClick={() => {
-                  console.log('clicked');
                   setstate(value.Tab_name);
                   setContent(value.Content);
                   setUrl(value.Image.data.attributes.url);

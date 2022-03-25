@@ -36,9 +36,7 @@ export default function FAQs({ id, pageType, pageId }) {
         <div className={inStyle.container}>
           <div className={inStyle.header1}>
             <div className={inStyle.hr}></div>
-            <div>
-              <ReactMarkdown>{post.Heading}</ReactMarkdown>
-            </div>
+            <div className={inStyle.Heading}>{post.Heading}</div>
             <div className={inStyle.hr}></div>
           </div>
           {post.SingleQnA.map((value, key) => {
