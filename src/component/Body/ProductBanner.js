@@ -33,10 +33,12 @@ export default function ProductBanner({ id }) {
     arrows: false,
   };
 
-  const settingsWithModules = {
-    ...settings,
-    dotsClass: Style.button__bar,
-  };
+  // const settingsWithModules = {
+  //   ...settings,
+  //   dotsClass: Style.button__bar,
+  // };
+
+  console.log(post);
 
   return (
     <div className={Style.wrapper}>

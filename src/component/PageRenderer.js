@@ -8,6 +8,9 @@ import Style from './../modules/Body/Body.module.css';
 import FeatureCard from './Body/FeatureCard';
 import FAQs from './Body/FAQs';
 import QuickLinks from './Body/QuickLinks';
+import Highlighter from './Body/Highlighter';
+import TextComponent from './Body/TextComponent';
+import ProductBanner from './Body/ProductBanner';
 
 export default function PageRenderer() {
   const params = useParams();
@@ -87,8 +90,21 @@ export default function PageRenderer() {
       case 'quick-links':
         return <QuickLinks id={key} pageType="sub-pages" pageId={pageId} />;
 
+      case 'tab-highlighter':
+        return (
+          <Highlighter id={key} pageType="hey-himalayas" pageId={pageId} />
+        );
+      case 'only-text':
+        return (
+          <TextComponent id={key} pageType="hey-himalayas" pageId={pageId} />
+        );
+      case 'image-carousel':
+        return (
+          <ProductBanner id={key} pageType="hey-himalayas" pageId={pageId} />
+        );
+
       default:
-        return 'NULL';
+        return <h2>Component not found</h2>;
     }
   }
 
