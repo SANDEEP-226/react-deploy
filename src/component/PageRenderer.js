@@ -9,31 +9,56 @@ import FeatureCard from './Body/FeatureCard';
 import FAQs from './Body/FAQs';
 import QuickLinks from './Body/QuickLinks';
 
-export default function PageBody() {
+export default function PageRenderer() {
   const params = useParams();
-  const { routeName, pageId } = params;
+  const { routeName } = params;
 
-  const baseURL = `http://localhost:1337/api/sub-pages/${pageId}?populate=*`;
+  const homePageId = process.env.REACT_APP_STRAPI_HOME_PAGE_ID;
+
   const [post, setPost] = useState(null);
-  const [isValid, setisValid] = useState(false);
+  const [isAvailable, setisAvailable] = useState(false);
+  const [pageId, setpageId] = useState(null);
 
   useEffect(() => {
-    axios
-      .get(baseURL)
-      .then((response) => {
-        const homePageId = process.env.REACT_APP_STRAPI_HOME_PAGE_ID;
-        console.log(homePageId + ' ' + routeName);
-        console.log(response.data.data.attributes);
-        const linkedHomeId = response.data.data.attributes.home_page.data.id;
-        const gotRouteName = response.data.data.attributes.Route_Name;
-        if (homePageId == linkedHomeId && gotRouteName == routeName) {
-          setisValid(true);
+    const getPageId = async () => {
+      let pageId = null;
+      try {
+        const response = await axios.get(
+          `http://localhost:1337/api/hey-himalayas/${homePageId}?populate[Link_page][populate]=*`
+        );
+        const pageArray =
+          response.data.data.attributes.Link_page.sub_pages.data;
+        let page = [];
+        page = pageArray.filter((page) => {
+          return page.attributes.Route_Name === routeName;
+        });
+        page = page[0];
+        if (page) {
+          pageId = page.id;
+          setisAvailable(true);
+          setpageId(pageId);
         }
-        setPost(response.data.data.attributes.Content);
-      })
-      .catch((error) => {
+      } catch (error) {
         console.log(error.message);
-      });
+        setPost(false);
+      }
+      return pageId;
+    };
+
+    const calls = async () => {
+      const pageId = await getPageId();
+      const baseURL = `http://localhost:1337/api/sub-pages/${pageId}?populate=*`;
+      axios
+        .get(baseURL)
+        .then((response) => {
+          setPost(response.data.data.attributes.Content);
+        })
+        .catch((error) => {
+          console.log(error.message);
+        });
+    };
+
+    calls();
   }, []);
 
   function getColumn(size, key) {
@@ -67,11 +92,16 @@ export default function PageBody() {
     }
   }
 
-  if (!post) {
-    return null;
+  if (!isAvailable) {
+    return <h1>404 Page Not Available</h1>;
   }
-  if (!isValid) {
-    return <h1>401 unauthorized access</h1>;
+  if (!post) {
+    return (
+      <div>
+        <h1>Some Network Error, </h1>
+        <h3>can not fetch data from server</h3>
+      </div>
+    );
   }
   return (
     <div>

@@ -46,6 +46,21 @@
   font-size: 24px;
   color: #444444;
 }
+.content {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 157.5%;
+  /* or 27px */
+
+  color: #626262;
+}
+
+.content li {
+  margin-left: 15px;
+  font-size: 16px;
+}
 
 @media only screen and (min-width: 1441px) {
   /* Large Size Devices */
@@ -62,9 +77,9 @@
     font-size: 1.2rem;
     padding-left: 1rem;
   }
-  .contentContainer p {
+  /* .contentContainer p {
     font-size: 0.8rem;
-  }
+  } */
   .contentContent {
     font-size: 0.8rem;
     font-family: sans-serif;
@@ -90,7 +105,7 @@
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 768px) {
   /* Medium size devices */
   .container {
     display: flex;
@@ -127,8 +142,64 @@
     font-family: sans-serif;
   }
 }
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* Medium size devices */
 
-@media only screen and (max-width: 425px) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .imageContainer {
+    flex-basis: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .imageContainer img {
+    /* padding-top: 1rem; */
+    margin: 0px;
+    width: 100%;
+    height: 80%;
+  }
+  .contentContainer {
+    flex-basis: 50%;
+    padding: 20px 10px 10px 10px;
+    line-height: 1.3rem;
+  }
+  .content {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 157.5%;
+    /* or 19px */
+
+    color: #9c9c9c;
+  }
+  .content li {
+    margin-left: 15px;
+    font-size: 11px;
+  }
+  .contentContent {
+    font-size: 0.75rem;
+    line-height: 1.4rem;
+    font-family: sans-serif;
+  }
+  .readMore2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157.5%;
+    /* identical to box height, or 22px */
+
+    text-decoration-line: underline;
+
+    color: #3970fe;
+  }
+}
+
+@media only screen and (max-width: 399px) {
   /* Medium size devices */
   .container {
     display: flex;

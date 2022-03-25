@@ -9,10 +9,46 @@ import Highlighter from './Body/Highlighter';
 import FAQs from './Body/FAQs';
 import QuickLinks from './Body/QuickLinks';
 import ProductBanner from './Body/ProductBanner';
-// import ProductBanner from './Body/ProductBanner';
-import Banner from './Body/Banner';
 import FourCard from './Body/FourCard';
+import Footer from './Footer';
 import TextComponent from './Body/TextComponent';
+
+// function getColumn(size, key) {
+//   switch (size) {
+//     case 'Two_column_layout':
+//       return <TwoColumn id={key} />;
+//     case 'Three_column_layout':
+//       return <ThreeColumn id={key} />;
+//     case 'Four_column_layout':
+//       return <FourColumn id={key} />;
+//     default:
+//       return '';
+//   }
+// }
+
+// function getComponent(name, variant, key) {
+//   switch (name) {
+//     case 'image-carousel':
+//       return <ProductBanner id={key} />;
+//     case 'basic-card-component':
+//       return getColumn(variant, key);
+//     case 'half-half':
+//       return <FeatureCard id={key} />;
+
+//     case 'qn-a':
+//       return <FAQs id={key} />;
+
+//     case 'quick-links':
+//       return <QuickLinks id={key} />;
+
+//     case 'tab-highlighter':
+//       return <Highlighter id={key} />;
+//     case 'only-text':
+//       return <TextComponent id={key} />;
+//     default:
+//       return 'NULL';
+//   }
+// }
 
 export default function Body() {
   const pageId = process.env.REACT_APP_STRAPI_HOME_PAGE_ID;
@@ -33,11 +69,13 @@ export default function Body() {
   function getColumn(size, key) {
     switch (size) {
       case 'Two_column_layout':
-        return <TwoColumn id={key} />;
+        return <TwoColumn id={key} pageType="hey-himalayas" pageId={pageId} />;
       case 'Three_column_layout':
-        return <ThreeColumn id={key} pageType="hey-himalayas" />;
+        return (
+          <ThreeColumn id={key} pageType="hey-himalayas" pageId={pageId} />
+        );
       case 'Four_column_layout':
-        return <FourColumn id={key} pageType="hey-himalayas" />;
+        return <FourColumn id={key} pageType="hey-himalayas" pageId={pageId} />;
       default:
         return '';
     }
@@ -59,9 +97,17 @@ export default function Body() {
         return <QuickLinks id={key} pageType="hey-himalayas" pageId={pageId} />;
 
       case 'tab-highlighter':
-        return <Highlighter id={key} />;
+        return (
+          <Highlighter id={key} pageType="hey-himalayas" pageId={pageId} />
+        );
       case 'only-text':
-        return <TextComponent id={key} />;
+        return (
+          <TextComponent id={key} pageType="hey-himalayas" pageId={pageId} />
+        );
+      case 'image-carousel':
+        return (
+          <ProductBanner id={key} pageType="hey-himalayas" pageId={pageId} />
+        );
 
       default:
         return 'NULL';
@@ -73,16 +119,13 @@ export default function Body() {
   }
   return (
     <div className={Style.wrapper}>
-      {/* <ProductBanner /> */}
-
       {post.map((value, key) => {
         return (
-          <div key={key} className={Style.wrapper}>
+          <div key={key} className={Style.container}>
             {getComponent(value.__component.substring(9), value.Variant, key)}
           </div>
         );
       })}
-      <Highlighter />
     </div>
   );
 }

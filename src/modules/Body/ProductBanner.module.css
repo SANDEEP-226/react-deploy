@@ -1,14 +1,15 @@
 .wrapper {
   width: 100%;
   height: 570px;
+  position: relative;
 }
-img {
+.imageContainer img {
   width: 100%;
-  height: 100%;
-  object-fit: fill;
+  height: 570px;
+  object-fit: cover;
 }
 .Container {
-  width: 50%;
+  width: 40%;
   height: 100%;
   position: absolute;
   top: 0px;
@@ -70,4 +71,34 @@ img {
   background: #277cfc;
   border-radius: 10px;
   cursor: pointer;
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .wrapper {
+    height: 480px;
+  }
+  .imageContainer img {
+    height: 480px;
+  }
+  .Container {
+    width: 60%;
+    height: 480px;
+  }
+  .content {
+    top: 120px;
+    left: 20px;
+  }
+  .Banner_Title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .Banner_Content {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .ck_btn {
+    width: 300px;
+    border-radius: 5px;
+  }
 }

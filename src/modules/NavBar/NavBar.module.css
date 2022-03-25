@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  /* position: relative; */
 }
 
 .wrapper {
@@ -31,7 +31,7 @@
 }
 .content {
   display: flex;
-  margin: 0px 15px;
+  margin: 0px 25px;
   align-items: center;
   color: #ffffff;
   justify-content: center;
@@ -78,7 +78,7 @@
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 768px) {
   /* Medium size devices */
   .content div {
     padding-right: 1rem;
@@ -87,7 +87,7 @@
     /* display: none; */
     position: absolute;
     top: 70px;
-    display: flex;
+    right: 20px;
     flex-direction: column;
     right: 0px;
     z-index: 1;
@@ -101,42 +101,96 @@
     cursor: pointer;
     display: block;
     font-size: 1.8rem;
+    color: #ffffff;
   }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 768px) {
-  /* Medium size devices */
-  .content div {
-    padding-right: 1rem;
+  .DropDownContainer {
+    width: 300px;
+    border-bottom: 1px solid #969696;
+    margin: 0px 20px;
   }
-  .rightContainer {
-    /* display: none; */
-    position: absolute;
-    top: 70px;
-    display: flex;
-    flex-direction: column;
-    right: 0px;
-    z-index: 1;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 1em 1px;
-  }
-  .content {
-    border-bottom: 1px solid rgb(235, 235, 235);
-  }
-  .rightBar {
-    cursor: pointer;
-    display: block;
-    font-size: 1.8rem;
+  .DropDownContainer {
+    border-top: 0.5px solid #a9a9a9;
   }
   .show {
+    display: flex;
     z-index: 1;
   }
   .hide {
     display: none;
   }
+  .content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #777777;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content:hover {
+    background-color: rgba(244, 118, 37, 0.1);
+  }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* Medium size devices */
+  .content div {
+    padding-right: 1rem;
+  }
+  .DropDownContainer {
+    border-top: 0.5px solid #a9a9a9;
+  }
+  .DropContentContainer {
+    margin: 0px 20px;
+    border-bottom: 1px solid #969696;
+  }
+  .content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #777777;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content:hover {
+    background-color: rgba(244, 118, 37, 0.1);
+  }
+  .reactIcon {
+    font-size: 30px;
+  }
+  .rightBar {
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.8rem;
+  }
+  .show {
+    display: flex;
+    z-index: 1;
+  }
+  .hide {
+    display: none;
+  }
+  .rightContainer {
+    width: 100%;
+    top: 80px;
+    flex-direction: column;
+    right: 0px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 1em 1px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
   /* Small devices */
   .content div {
     padding-right: 0.8rem;

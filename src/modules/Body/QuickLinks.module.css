@@ -1,6 +1,6 @@
 .wrapper {
   width: 85%;
-  padding-top: 40px;
+  padding: 10px 0px;
 }
 .header {
   font-family: 'Poppins';
@@ -9,6 +9,8 @@
   font-size: 25px;
   line-height: 157.5%;
   /* or 47px */
+  padding: 30px 0px;
+  padding-bottom: 50px;
 
   display: flex;
   flex-direction: row;
@@ -25,7 +27,7 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: baseline;
+  justify-content: start;
 }
 
 .Grey_BackgroundBox {
@@ -61,7 +63,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  margin-bottom: 30px;
 }
 .content li {
   list-style: none;
@@ -71,6 +74,7 @@
   font-size: 18px;
   line-height: 157.5%;
   padding: 0.2rem 0px;
+  cursor: pointer;
   /* identical to box height, or 35px */
 
   text-decoration-line: underline;
@@ -103,18 +107,49 @@
   }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  /* Medium size devices */
+
+  .content {
+    width: 50%;
+  }
+  /* .container {
+    justify-content: center;
+  } */
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   /* Medium size devices */
 
   .content {
     width: 50%;
   }
   .container {
-    justify-content: center;
+    justify-content: start;
+  }
+  .header {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 157.5%;
+    margin-bottom: 40px;
+    padding: 20px 0px 40px 0px;
+    margin: 0px;
+  }
+  .hr {
+    width: 120px;
+  }
+  .subHeader {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 157.5%;
+  }
+  .content li {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 157.5%;
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 399px) {
   /* Small devices */
 
   .content {

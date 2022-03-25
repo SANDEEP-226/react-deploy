@@ -1,295 +1,428 @@
-.wrapper{
-    width: 90%; padding: 0px;
+.wrapper {
+  width: 85%;
+  padding: 0px;
 }
 
-.title{
-    font-family: soleil, sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 44px;
-    color: rgb(68, 68, 68);
+.title {
+  font-family: soleil, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 44px;
+  color: rgb(68, 68, 68);
 }
-.desc{
-    margin-top: 8px;
-    font-family: soleil, sans-serif;
-    font-size: 1.3rem;
-    line-height: 1.33rem;
-    text-align: left;
-    color: rgb(68, 68, 68);
+.desc {
+  margin-top: 8px;
+  font-family: soleil, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.33rem;
+  text-align: left;
+  color: rgb(68, 68, 68);
 }
-.cardWrapper{
-    border: 1px solid rgb(226, 226, 226);
-    display: flex;
-    margin:  30px 0px;;
-    border-radius: 8px;
-    padding: 20px;
-    min-height: 300px ;
+.cardWrapper {
+  /* background: #3a3a3a; */
+  box-shadow: 0px 0px 20px 5px rgba(189, 189, 189, 0.25);
+  border-radius: 10px;
+  height: 239px;
+  margin: 30px 0px;
+  display: flex;
 }
-.leftContainer{
-    flex-basis: 70%;
-    padding-right: 10px;
-    border-right: 1px solid rgb(226, 226, 226);;
+.ImageContaniner {
+  /* background: #f47625; */
+  flex: 0.9;
+}
+.ImageContaniner img {
+  width: 219px;
+  height: 219px;
+  margin: 10px;
+  /* background: #c4c4c4; */
+  border-radius: 10px;
+}
+.Content {
+  /* background: black; */
+  flex: 1.9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-right: 1px dashed #e0e0e0;
+  /* position: stati/; */
+}
+.ContentTitle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #454545;
+}
+.listOfFeatures {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #a2a2a2;
+}
+.listOfFeatures li {
+  list-style: none;
+  padding-left: 10px;
+}
+.VisitBtn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 157.5%;
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  /* or 28px */
+  cursor: pointer;
+
+  text-decoration-line: underline;
+
+  color: #3970fe;
+}
+.PriceTags {
+  /* background: #f47625; */
+  margin-left: 20px;
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.row1 {
+  display: flex;
+  /* align-items: ;
+  justify-content: ; */
+}
+.PriceTitle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 10px;
+  /* identical to box height */
+
+  color: #757575;
+}
+.prvPrice {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-decoration-line: line-through;
+
+  color: #bababa;
+}
+.row2 {
+  display: flex;
+  align-items: center;
+}
+.presentPrice {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  padding-right: 20px;
+  color: #f47625;
+}
+.offerTag {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  background-color: #fff5db;
+  border-radius: 5px;
+  color: #ffb800;
+  padding: 4px;
+}
+.row3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  padding: 15px 70px;
+  background: #f47625;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.header1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 157.5%;
+  padding: 30px 0px;
+  color: #3a3a3a;
+}
+.hr {
+  height: 1px;
+  width: 250px;
+  background-color: #f47625;
+}
+.safety {
+  margin-top: 10px;
+  padding: 8px 8px 8px 19px;
+  position: relative;
+  font-size: small;
+  border-radius: 0px 2px 2px 0px;
+  font-weight: 700;
+  justify-content: left;
+  background: rgb(248, 248, 248);
+  color: rgb(68, 68, 68);
+  width: max-content;
+  cursor: pointer;
 }
 
-.variantTitle{
-    margin: 0px;
-    max-width: 768px;
-    color: rgb(68, 68, 68);
-    font-size: 1.5rem;
-    line-height: 28px;
-    font-family: sans-serif;
-    font-weight: 400;
-}
-.safety{
-    margin-top:10px ;
-    padding: 8px 8px 8px 19px;
-    position: relative;
-    font-size: small;
-    border-radius: 0px 2px 2px 0px;
-    font-weight: 700;
-    justify-content: left;
-    background: rgb(248, 248, 248);
-    color: rgb(68, 68, 68);
-    width: max-content;
-    cursor: pointer;
-}
-
-.topBar ul{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding-bottom: 15px;
-    border-bottom:  1px solid rgb(226, 226, 226);;
+.topBar ul {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(226, 226, 226);
 }
 .topBar ul li {
+  list-style: none;
+  padding: 0px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding-bottom: 0px;
+  display: block;
+  border-bottom: 1px solid transparent;
+  transform: translateY(1px);
+  font-weight: 600;
+}
+.topBar ul li:hover {
+  color: #ff5300;
+  /* border-bottom: 1px solid #ff5300; */
+}
+
+.Render li {
+  color: #444;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  padding-bottom: 10px;
+  line-height: 19px;
+}
+.rightContainer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 0% 8%;
+}
+.rightContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+
+  margin-left: 10%;
+}
+
+.bookNow1 {
+  background-color: #ff5300;
+  color: white;
+  width: 100px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 1441px) {
+  /* Large Size Devices */
+
+  .title_fs {
+    font-size: 2rem;
+  }
+  .medium_fs {
+    font-size: 1.4rem;
+  }
+  .small_fs {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Default size devices */
+  .title_fs {
+    font-size: 2rem;
+  }
+  .medium_fs {
+    font-size: 1.2rem;
+  }
+  .variantTitle {
+    font-family: sans-serif;
+    font-size: 1.45rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet size devices */
+
+  .title_fs {
+    font-size: 1.8rem;
+  }
+  .medium_fs {
+    font-size: 1rem;
+  }
+  .variantTitle {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  /* Medium size devices */
+
+  .title_fs {
+    font-size: 1.6rem;
+  }
+  .medium_fs {
+    font-size: 1rem;
+  }
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftContainer {
+    border-right: 0px;
+  }
+  .variantTitle {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+  }
+  .rightContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .rightContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topBar ul li {
     list-style: none;
-    padding: 0px 10px;
-    font-size: 0.9rem;
+    padding: 0px 7px;
+    font-size: 0.7rem;
     cursor: pointer;
     padding-bottom: 0px;
     display: block;
     border-bottom: 1px solid transparent;
     transform: translateY(1px);
     font-weight: 600;
-}
-.topBar ul li:hover{
+  }
+  .topBar ul li:hover {
     color: #ff5300;
     /* border-bottom: 1px solid #ff5300; */
-}
-
-.Render li {
+  }
+  .Render li {
     color: #444;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-family: sans-serif;
-    padding-bottom : 10px;
+    padding-bottom: 8px;
     line-height: 19px;
-}
-.rightContainer{
-    display: flex;
-    align-items:baseline;
-    justify-content: center;
-    padding: 0% 8%;
-}
-.rightContainer div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
-    position: relative;
-    
-    margin-left: 10%;
-}
-
-.bookNow1{
+  }
+  .bookNow1 {
     background-color: #ff5300;
-    color:white;
-    width : 100px;
-    font-size: 1rem;
+    color: white;
+    width: 70px;
+    font-size: 0.7rem;
     border-radius: 5px;
-    padding: 5px 20px;
+    padding: 5px 10px;
     cursor: pointer;
-    margin: 10px;
-}
-
-
-
-
-@media only screen and (min-width: 1441px) {
-/* Large Size Devices */
-
-.title_fs{
-font-size: 2rem;
-}
-.medium_fs{
-    font-size: 1.4rem;
-}
-.small_fs{
-    font-size: 1rem;
-}
-
-}
-@media only screen and (min-width: 1025px) and (max-width: 1440px){
-/* Default size devices */
-    .title_fs{
-    font-size: 2rem;
-    }
-    .medium_fs{
-        font-size: 1.2rem;
-    }
-    .variantTitle{
-        font-family: sans-serif;
-        font-size: 1.45rem;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    /* Tablet size devices */
-    
-    .title_fs{
-        font-size: 1.8rem;
-        }
-    .medium_fs{
-        font-size: 1rem;
-    }
-    .variantTitle{
-        font-family: sans-serif;
-        font-size: 1.3rem;
-    }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 768px) {
-    /* Medium size devices */
-
-    .title_fs{
-        font-size: 1.6rem;
-        }
-    .medium_fs{
-        font-size: 1rem;
-    }
-    .cardWrapper{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .leftContainer{
-        border-right: 0px;
-    }
-    .variantTitle{
-        font-family: sans-serif;
-        font-size: 1.3rem;
-    }
-    .rightContainer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    .rightContainer div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .topBar ul li {
-        list-style: none;
-        padding: 0px 7px;
-        font-size: 0.7rem;
-        cursor: pointer;
-        padding-bottom: 0px;
-        display: block;
-        border-bottom: 1px solid transparent;
-        transform: translateY(1px);
-        font-weight: 600;
-    }
-    .topBar ul li:hover{
-        color: #ff5300;
-        /* border-bottom: 1px solid #ff5300; */
-    }
-    .Render li {
-        color: #444;
-        font-size: 0.7rem;
-        font-family: sans-serif;
-        padding-bottom : 8px;
-        line-height: 19px;
-    }
-    .bookNow1{
-        background-color: #ff5300;
-        color:white;
-        width : 70px;
-        font-size: 0.7rem;
-        border-radius: 5px;
-        padding: 5px 10px;
-        cursor: pointer;
-        margin:5px;
-    }
+    margin: 5px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-    /* Small devices */
-    .title_fs{
-        font-size: 1.4rem;
-        }
-    .medium_fs{
-        font-size: 1rem;
-    }
-    .variantTitle{
-        font-family: sans-serif;
-        font-size: 1.2rem;
-    }
-    .cardWrapper{
-        display: flex;
-        flex-direction: column;
+  /* Small devices */
+  .title_fs {
+    font-size: 1.4rem;
+  }
+  .medium_fs {
+    font-size: 1rem;
+  }
+  .variantTitle {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+  }
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftContainer {
+    border-right: 0px;
+  }
 
-    }
-    .leftContainer{
-        border-right: 0px;
-    }
-    
-    .rightContainer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    .rightContainer div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .topBar ul{
-        padding-left: 0px;
-    }
-    .topBar ul li {
-        list-style: none;
-        /* padding: 0px 7px; */
-        font-size: 0.7rem;
-        cursor: pointer;
-        padding-bottom: 0px;
-        display: block;
-        border-bottom: 1px solid transparent;
-        /* transform: translateY(1px); */
-        font-weight: 600;
-    }
-    .topBar ul li:hover{
-        color: #ff5300;
-        /* border-bottom: 1px solid #ff5300; */
-    }
-    .Render ul {
-        padding-left: 10px;
-    }
-    .Render li {
-        color: #444;
-        font-size: 0.7rem;
-        font-family: sans-serif;
-        padding-bottom : 8px;
-        line-height: 19px;
-    }
-    .bookNow1{
-        background-color: #ff5300;
-        color:white;
-        width : 70px;
-        font-size: 0.7rem;
-        border-radius: 5px;
-        padding: 5px 10px;
-        cursor: pointer;
-        margin:5px;
-    }
+  .rightContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .rightContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topBar ul {
+    padding-left: 0px;
+  }
+  .topBar ul li {
+    list-style: none;
+    /* padding: 0px 7px; */
+    font-size: 0.7rem;
+    cursor: pointer;
+    padding-bottom: 0px;
+    display: block;
+    border-bottom: 1px solid transparent;
+    /* transform: translateY(1px); */
+    font-weight: 600;
+  }
+  .topBar ul li:hover {
+    color: #ff5300;
+    /* border-bottom: 1px solid #ff5300; */
+  }
+  .Render ul {
+    padding-left: 10px;
+  }
+  .Render li {
+    color: #444;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    padding-bottom: 8px;
+    line-height: 19px;
+  }
+  .bookNow1 {
+    background-color: #ff5300;
+    color: white;
+    width: 70px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+  }
 }

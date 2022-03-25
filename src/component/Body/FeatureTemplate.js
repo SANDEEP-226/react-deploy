@@ -11,12 +11,12 @@ export default function FeatureTemplate({ id, content, url }) {
     <div className={Style.wrapper}>
       <div className={Style.container}>
         <div className={Style.imageContainer}>
-          <img src={img} />
+          <img src={`http://localhost:1337${url}`} />
         </div>
         <div className={Style.contentContainer}>
           <div className={Style.content}>
             <ReactMarkdown>
-              {state ? content : content.substring(0, 800)}
+              {state ? content : content.substring(0, 200)}
             </ReactMarkdown>
           </div>
           <div onClick={() => setstate(!state)} className={Style.readMore2}>

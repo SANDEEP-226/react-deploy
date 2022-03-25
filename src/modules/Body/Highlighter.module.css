@@ -1,5 +1,5 @@
 .row {
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@
 .hr {
   height: 1px;
   width: 100%;
-  min-width: 300px;
+  min-width: 10px;
   max-width: 300px;
   background-color: #f47625;
 }
@@ -61,6 +61,7 @@ hr {
   line-height: 27px;
   border-bottom: 1px solid #eeeeee;
 }
+
 .highlighterList ul li:hover {
   color: #f47625;
 }
@@ -89,8 +90,33 @@ hr {
   /* Tablet size devices */
 }
 
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 768px) {
   /* Medium size devices */
+  .rowTitle h2 {
+    font-size: 1.3rem;
+    color: #444444;
+  }
+  .highlighterList ul li {
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .header {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 157.5%;
+  }
+  .FeatureContainer {
+    width: 336px;
+    height: 471px;
+    padding: 10px;
+    height: auto;
+    max-width: 800px;
+  }
+  .hr {
+    width: 60px;
+  }
   .rowTitle h2 {
     font-size: 1.3rem;
     color: #444444;
