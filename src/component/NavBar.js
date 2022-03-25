@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Style from '../modules/NavBar/NavBar.module.css';
-import image from './../assets/DubaiLogo.png';
-import data from './../Json/NavBarContent.json';
 import { FiChevronDown } from 'react-icons/fi';
 import { IoIosArrowUp } from 'react-icons/io';
 import DropDown from './NavBar/DropDown';
 import axios from 'axios';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
-import SideBar from './NavBar/SideBar';
 
 export default function NavBar() {
   const [dropdown, setDropdown] = useState(false);

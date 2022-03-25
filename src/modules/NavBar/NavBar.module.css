@@ -7,7 +7,8 @@
 }
 
 .wrapper {
-  height: 10%;
+  height: auto;
+  padding: 10px 0;
   position: sticky;
   top: 0px;
   width: 100%;
@@ -36,7 +37,8 @@
   color: #ffffff;
   justify-content: center;
   cursor: pointer;
-  height: 80px;
+  /* height: 80px; */
+  padding: 10px 0;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -147,7 +149,9 @@
 @media only screen and (min-width: 400px) and (max-width: 500px) {
   /* Medium size devices */
   .wrapper {
-    height: 80px;
+    /* height: 80px;
+     */
+    padding: 10px 0;
   }
   .content div {
     padding-right: 1rem;
