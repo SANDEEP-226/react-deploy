@@ -6,8 +6,13 @@
   /* position: relative; */
 }
 
+a {
+  color: #ffffff;
+}
+
 .wrapper {
-  height: 80px;
+  height: auto;
+  padding: 10px 0;
   position: sticky;
   top: 0px;
   width: 100%;
@@ -36,7 +41,8 @@
   color: #ffffff;
   justify-content: center;
   cursor: pointer;
-  height: 80px;
+  /* height: 80px; */
+  padding: 10px 0;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -66,11 +72,17 @@
     display: flex;
     font-size: 0.8rem;
   }
+  .content {
+    margin: 0px 15px;
+  }
+  .content div {
+    padding-right: 0.7rem;
+  }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1101px) and (max-width: 1440px) {
   /* Default size devices */
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
   /* Tablet size devices */
   .rightContainer {
     display: flex;
@@ -80,6 +92,9 @@
 
 @media only screen and (min-width: 501px) and (max-width: 768px) {
   /* Medium size devices */
+  .wrapper {
+    height: 80px;
+  }
   .content div {
     padding-right: 1rem;
   }
@@ -137,6 +152,11 @@
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
   /* Medium size devices */
+  .wrapper {
+    /* height: 80px;
+     */
+    padding: 10px 0;
+  }
   .content div {
     padding-right: 1rem;
   }
@@ -195,26 +215,52 @@
   .content div {
     padding-right: 0.8rem;
   }
-  .rightContainer {
-    position: absolute;
-    width: 100%;
-    top: 70px;
+  .DropDownContainer {
+    border-top: 0.5px solid #a9a9a9;
+  }
+  .DropContentContainer {
+    margin: 0px 20px;
+    border-bottom: 1px solid #969696;
+  }
+  .content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #777777;
     display: flex;
-    flex-direction: column;
-    right: 0px;
-    z-index: 1;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 1em 1px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content:hover {
+    background-color: rgba(244, 118, 37, 0.1);
+  }
+  .reactIcon {
+    font-size: 30px;
   }
   .rightBar {
+    color: #ffffff;
     cursor: pointer;
     display: block;
     font-size: 1.8rem;
   }
   .show {
+    display: flex;
     z-index: 1;
   }
   .hide {
     display: none;
+  }
+  .rightContainer {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    flex-direction: column;
+    right: 0px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 1em 1px;
   }
 }

@@ -3,9 +3,8 @@ import Style from './../../modules/Body/TextComponent.module.css';
 import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
 
-export default function TextComponent({ id }) {
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate]=*';
+export default function TextComponent({ id, pageType, pageId }) {
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate]=*`;
   const [post, setPost] = React.useState(null);
   const [state, setstate] = useState(false);
 
@@ -27,10 +26,10 @@ export default function TextComponent({ id }) {
         <div className={Style.container}>
           <div className={Style.header}>
             <div className={Style.hr}></div>
-            <div className={Style.title}>Heading here</div>
+            <div className={Style.Heading}>{post.Heading}</div>
             <div className={Style.hr}></div>
           </div>
-          <div className={Style.content}>
+          <div className={Style.Description}>
             <ReactMarkdown>{post.Content}</ReactMarkdown>
           </div>
         </div>

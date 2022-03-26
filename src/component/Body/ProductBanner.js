@@ -1,14 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import Style from './../../modules/Body/ProductBanner.module.css';
-// import img from './../../assets/banner_1.png';
-// import img1 from './../../assets/Ban1.jpeg';
-// import img2 from './../../assets/Ban2.jpeg';
 import Slider from 'react-slick';
 
-export default function ProductBanner({ id }) {
-  const baseURL =
-    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate]=*';
+export default function ProductBanner({ id, pageType, pageId }) {
+  const baseURL = `http://localhost:1337/api/${pageType}/${pageId}?populate[Content][populate]=*`;
   const [post, setPost] = React.useState(null);
   React.useEffect(() => {
     axios
@@ -33,10 +29,10 @@ export default function ProductBanner({ id }) {
     arrows: false,
   };
 
-  const settingsWithModules = {
-    ...settings,
-    dotsClass: Style.button__bar,
-  };
+  // const settingsWithModules = {
+  //   ...settings,
+  //   dotsClass: Style.button__bar,
+  // };
 
   return (
     <div className={Style.wrapper}>

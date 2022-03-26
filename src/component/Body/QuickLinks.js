@@ -29,9 +29,7 @@ export default function QuickLinks({ id, pageType, pageId }) {
       <div className={Style.wrapper}>
         <div className={Style.header}>
           <div className={Style.hr}></div>
-          <div>
-            <ReactMarkdown>{post.Heading}</ReactMarkdown>
-          </div>
+          <div className={Style.Heading}>{post.Heading}</div>
           <div className={Style.hr}></div>
         </div>
         <div className={Style.container}>

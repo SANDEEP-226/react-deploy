@@ -77,8 +77,6 @@
     position: static;
     box-shadow: none;
     margin-left: 50px;
-    /* identical to box height */
-
     color: #8f8f8f;
   }
 
@@ -94,4 +92,22 @@
 
 @media only screen and (max-width: 399px) {
   /* Small devices */
+  .container {
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 100%;
+    color: #777777;
+    position: static;
+    box-shadow: none;
+    margin-left: 50px;
+    color: #8f8f8f;
+  }
+  .container ul li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container ul li:hover {
+    background-color: rgba(244, 118, 37, 0.1);
+  }
 }

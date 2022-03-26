@@ -16,9 +16,6 @@ function App() {
         <NavBar />
         <Routes className="center">
           <Route path="/" exact element={<Body />} />
-          {
-            //       <Route path="/:routeName/:pageId" exact element={<PageBody />} />
-          }
           <Route path="/:routeName" exact element={<PageRenderer />} />
           <Route path="/product/:productId" element={<Product />} />
           <Route path="*" element={<h1>404 PAGE NOT FOUND</h1>} />

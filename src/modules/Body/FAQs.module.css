@@ -64,10 +64,23 @@
   padding: 30px 0px;
   color: #3a3a3a;
 }
+
 .hr {
   height: 1px;
   width: 250px;
   background-color: #f47625;
+  flex: 1;
+}
+.Heading {
+  margin: 0px 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 157.5%;
+  /* or 47px */
+
+  color: #3a3a3a;
 }
 
 .content {
@@ -106,28 +119,16 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Tablet size devices */
 
-  .wrapper h2 {
-    font-size: 1.3rem;
-  }
-  .subHeader {
-    font-size: 1.1rem;
-  }
-  .para {
-    font-size: 1rem;
+  .Heading {
+    font-size: 23px;
   }
 }
 
 @media only screen and (min-width: 501px) and (max-width: 768px) {
   /* Medium size devices */
 
-  .wrapper h2 {
-    font-size: 1.2rem;
-  }
-  .subHeader {
-    font-size: 1rem;
-  }
-  .para {
-    font-size: 0.9rem;
+  .Heading {
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
@@ -146,6 +147,9 @@
   .subHeader {
     font-size: 1rem;
   }
+  .Heading {
+    font-size: 17px;
+  }
 
   .subHeader {
     font-weight: 500;
@@ -161,13 +165,7 @@
 
 @media only screen and (max-width: 399px) {
   /* Small devices */
-  .wrapper h2 {
-    font-size: 1.1rem;
-  }
-  .subHeader {
-    font-size: 0.9rem;
-  }
-  .para {
-    font-size: 0.8rem;
+  .Heading {
+    font-size: 15px;
   }
 }

@@ -34,10 +34,11 @@ export default function ThreeColumn({ id, pageType, pageId }) {
       >
         <div className={Style.header}>
           <div className={Style.hr}></div>
-          <div>
-            <ReactMarkdown>{post.Heading}</ReactMarkdown>
-          </div>
+          <div className={Style.HeadingText}>{post.Heading}</div>
           <div className={Style.hr}></div>
+        </div>
+        <div className={Style.Description}>
+          <ReactMarkdown>{post.Heading_description}</ReactMarkdown>
         </div>
         <div className={Style.columnContainer}>
           {post.Cards.map((value, key) => {
@@ -63,7 +64,9 @@ export function ThreeColumnContent({ data }) {
         <div>
           {data.length < 200 ? null : state ? 'Read Less' : 'Read More'}
         </div>
-        <div>{data.length < 200 ? null : <HiOutlineArrowNarrowRight />}</div>
+        <div className={Style.arrowRight}>
+          {data.length < 200 ? null : <HiOutlineArrowNarrowRight />}
+        </div>
       </div>
     </div>
   );

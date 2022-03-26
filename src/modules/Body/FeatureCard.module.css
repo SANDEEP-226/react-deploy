@@ -8,7 +8,7 @@
   margin: 25px 0px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 }
 .imageContainer {
   position: relative;
@@ -23,8 +23,8 @@
 }
 .contentContainer {
   /* font-size: 1rem; */
-  padding: 1rem 1rem 1rem 1rem;
   /* line-height: 1.4rem; */
+  margin: 1rem;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -33,6 +33,24 @@
   /* or 32px */
 
   color: #626262;
+}
+.readMore2 {
+  font-family: sans-serif;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 40px 0px;
+  text-decoration-line: underline;
+  color: #4664ff;
+  font-family: 'Poppins';
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrowRight {
+  font-size: 30px;
+  margin-right: 40px;
 }
 .header {
   display: flex;
@@ -50,14 +68,37 @@
   height: 1px;
   width: 250px;
   background-color: #f47625;
+  flex: 1;
+}
+.Heading {
+  margin: 0px 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 157.5%;
+  /* or 47px */
+
+  color: #3a3a3a;
+}
+.Description {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 157.5%;
+  /* or 32px */
+
+  text-align: center;
+
+  color: #6f6f6f;
+  margin-bottom: 20px;
 }
 .grey {
-  /* background-color: rgb(250, 250, 250); */
 }
 
 .Grey_BackgroundBox {
   background-color: rgb(245, 245, 245);
-  /* background-color: tomato; */
   width: 100%;
   height: 100%;
   position: relative;
@@ -66,7 +107,6 @@
 }
 .White_BackgroundBox {
   background-color: #fff;
-  /* background-color: tomato; */
   width: 100%;
   height: 100%;
   position: relative;
@@ -80,21 +120,33 @@
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   /* Default size devices */
   .contentContainer {
-    font-size: 0.9rem;
-    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
-    line-height: 1.5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 157.5%;
+    /* or 32px */
+
+    color: #626262;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* Tablet size devices */
-
+  .imageContainer img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
   .contentContainer {
     padding: 0.75rem 0.75rem 0.75rem 0.75rem;
     font-size: 0.8rem;
     line-height: 1.45rem;
   }
+  .Heading {
+    font-size: 23px;
+  }
 }
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 768px) {
   /* Medium size devices */
   .container {
     flex-direction: column;
@@ -104,11 +156,89 @@
     line-height: 1.4rem;
     padding: 0.75rem 0.75rem 0.75rem 0.75rem;
   }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Heading {
+    font-size: 20px;
+  }
+  .imageContainer {
+    width: 400px;
+    height: 320px;
+  }
+  .imageContainer img {
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+  }
+  .contentContainer {
+    font-size: 12px;
+    line-height: 1.4rem;
+    /* padding: 0.75rem 0.75rem 0.75rem 0.75rem; */
+  }
+  .Description {
+    font-size: 16px;
+  }
+  .readMore2 {
+    font-size: 15px;
+  }
+
+  .arrowRight {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* Medium size devices */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Description {
+    font-size: 12px;
+  }
+  .Heading {
+    font-size: 17px;
+  }
+  .wrapper {
+    padding: 20px 0px;
+  }
+  .imageContainer {
+    width: 354px;
+    height: 296px;
+  }
+  .imageContainer img {
+    width: 354px;
+    height: 296px;
+    object-fit: cover;
+  }
+  .contentContainer {
+    font-size: 12px;
+    line-height: 1.4rem;
+    /* padding: 0.75rem 0.75rem 0.75rem 0.75rem; */
+  }
+  .readMore2 {
+    font-size: 15px;
+  }
+
+  .arrowRight {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 425px) {
   /* Small devices */
   .container {
     flex-direction: column;
+  }
+  .Heading {
+    font-size: 15px;
+  }
+  .imageContainer img {
+    width: 354px;
+    height: 296px;
+    object-fit: cover;
   }
   .contentContainer {
     font-size: 0.68rem;

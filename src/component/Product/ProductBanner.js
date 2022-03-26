@@ -1,22 +1,53 @@
-import  Slider  from 'react-slick';
-import React , { useState } from 'react'
-import Style from "./../../modules/Product/ProductBanner.module.css"
-import img1 from "../../assets/Ban1.jpeg"
-import img2 from "../../assets/Ban2.jpeg"
-import img3 from "../../assets/Ban3.jpeg"
-import img4 from "../../assets/udaipurlake.jpg"
+import React from 'react';
+import axios from 'axios';
+import Style from './../../modules/Body/ProductBanner.module.css';
+import Slider from 'react-slick';
 
+export default function ProductBanner({ data }) {
+  const imgArr = data.gallery_media;
+  const baseURL =
+    'http://localhost:1337/api/hey-himalayas/1?populate[Content][populate]=*';
+  const [post, setPost] = React.useState(null);
+  React.useEffect(() => {
+    axios
+      .get(baseURL)
+      .then((response) => {
+        setPost(response.data.data.attributes.Content[1]);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
-export default function ProductBanner() {
+  if (!post) return <div>null</div>;
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    dotsClass: 'button__bar',
+    arrows: false,
+  };
+
   return (
     <div className={Style.wrapper}>
-        <img src ={ img4 }/>
+      <Slider {...settings}>
+        {imgArr.map((value, key) => {
+          return (
+            <div key={key} className={Style.imageContainer}>
+              <img src={value.media_urls.original} />
+            </div>
+          );
+        })}
+      </Slider>
+
+      <div className={Style.Container}>
         <div className={Style.content}>
-          <div className={Style.inner}>
-            <div><h2> Book Burj Khalifa Tickets </h2></div>
-            <div className={Style.bookBtn}>Book Now</div>
-          </div>
+          <div className={Style.Banner_Title}>{data.name}</div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
