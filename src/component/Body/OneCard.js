@@ -1,13 +1,20 @@
 import classes from './../../modules/Body/OneCard.module.css';
-import image from './../../assets/Ban1.jpeg';
-export default function OneCard({ name, price, currentPrice, rating }) {
-  // image = `http://localhost:1337${image}`;
-  console.log(name, price, currentPrice, rating);
+// import image from './../../assets/Ban1.jpeg';
+export default function OneCard({
+  name,
+  price,
+  currentPrice,
+  rating,
+  image,
+  productId,
+}) {
   return (
     <div className={classes.gicOuter}>
-      <div className={classes.generalImageCard}>
-        <img className={classes.imgInCard} src={image} alt="" />
-      </div>
+      <a href={`/product/${productId}`}>
+        <div className={classes.generalImageCard}>
+          <img className={classes.imgInCard} src={image} alt="" />
+        </div>
+      </a>
       <div className={classes.gicBottom}>
         <p className={classes.popinsFont4 + ' ' + classes.pckName}>{name}</p>
         <p className={classes.popinsFont4 + ' ' + classes.pckRate}>{rating}</p>

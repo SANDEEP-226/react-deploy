@@ -34,8 +34,6 @@ export default function ProductBanner({ id, pageType, pageId }) {
   //   dotsClass: Style.button__bar,
   // };
 
-  console.log(post);
-
   return (
     <div className={Style.wrapper}>
       <Slider {...settings}>

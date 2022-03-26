@@ -13,8 +13,6 @@ export default function DisplayRow({ id, pageType, pageId }) {
       .get(baseURL)
       .then((response) => {
         setPost(response.data.data.attributes.Content[id]);
-        console.log(response.data.data.attributes.Content[id]);
-        // products = response.data.data.attributes.Content[id].product_cards.data;
       })
       .catch((error) => {
         console.log(error.message);
@@ -39,9 +37,7 @@ export default function DisplayRow({ id, pageType, pageId }) {
             }px`,
           }}
         >
-          {console.log(post.product_cards.data)}
           {post.product_cards.data.map((k, i) => {
-            console.log(k);
             return (
               <OneCard
                 key={i}
@@ -49,7 +45,8 @@ export default function DisplayRow({ id, pageType, pageId }) {
                 price={k.attributes.orignal_price}
                 currentPrice={k.attributes.discounted_price}
                 rating={k.attributes.rating}
-                // image={k.tripThumbnail.data.attributes.url}
+                image={k.attributes.link}
+                productId={k.attributes.product_code}
               />
             );
           })}

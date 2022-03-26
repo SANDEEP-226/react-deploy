@@ -25,8 +25,13 @@ export default function Product() {
         }
       )
       .then((response) => {
+        console.log('success');
         setproductDetail(response.data);
         setloading(false);
+      })
+      .catch((error) => {
+        console.log('fail');
+        console.log(error.message);
       });
   }, []);
 

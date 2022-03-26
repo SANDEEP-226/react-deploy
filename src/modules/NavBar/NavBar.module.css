@@ -6,6 +6,10 @@
   /* position: relative; */
 }
 
+a {
+  color: #ffffff;
+}
+
 .wrapper {
   height: auto;
   padding: 10px 0;
