@@ -33,9 +33,43 @@
 .pckName {
   color: #3a3a3a;
   margin-bottom: 5px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135.5%;
+  color: #000;
+  margin-bottom: 8px;
+}
+.react_icon_1 {
+  color: #ffc527;
+}
+.react_icon_2 {
+  font-size: 0.9rem;
+}
+.pckCurrentPrice {
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+.price_tag {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135.5%;
+  color: #000;
+}
+.pckPrevPrice {
+  text-decoration: line-through;
+  color: #a4a4a4;
 }
 
-.pckRate {
-  color: #777;
-  font-size: 0.8rem;
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .pckName {
+    font-size: 14px;
+  }
 }
