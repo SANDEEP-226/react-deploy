@@ -45,9 +45,7 @@ export default function FourColumn({ id, pageType, pageId }) {
           {post.Cards.map((value, key) => {
             return (
               <div className={Style.FourColumn} key={key}>
-                <Link to={`/product/${value.id}`}>
-                  <FourCard type="fourColumn" value={value} />
-                </Link>
+                <FourCard type="fourColumn" value={value} />
               </div>
             );
           })}

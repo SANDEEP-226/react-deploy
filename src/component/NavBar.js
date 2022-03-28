@@ -8,8 +8,18 @@ import axios from 'axios';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
+let toggleArray = [];
+function toggle(key) {
+  if (toggleArray[key] == true) toggleArray[key] = false;
+  else {
+    toggleArray.fill(false);
+    toggleArray[key] = !toggleArray[key];
+  }
+}
+
 export default function NavBar() {
-  const [dropdown, setDropdown] = useState(false);
+  const [dropdown, setDropdown] = useState(true);
+  const [previousKey, setPreviousKey] = useState(0);
   const pageId = process.env.REACT_APP_STRAPI_HOME_PAGE_ID;
   const baseURL = `http://localhost:1337/api/hey-himalayas/${pageId}?populate[0]=Nav&populate[1]=Nav.Logo&populate[2]=Nav.Link_Item.Sub_Link`;
   const [post, setPost] = useState(null);
@@ -20,6 +30,7 @@ export default function NavBar() {
       .get(baseURL)
       .then((response) => {
         setPost(response.data.data.attributes.Nav);
+        toggleArray = new Array(post[0].Link_Item.length).fill(false);
       })
       .catch((error) => {
         console.log(error);
@@ -27,7 +38,6 @@ export default function NavBar() {
   }, []);
 
   if (!post) {
-    //
     return null;
   }
 
@@ -51,9 +61,10 @@ export default function NavBar() {
               <div key={key} className={Style.DropContentContainer}>
                 <div
                   className={Style.content}
+                  id="tester-id"
                   onClick={() => {
                     setDropdown(!dropdown);
-                    value.status = !dropdown;
+                    toggle(key);
                   }}
                 >
                   <a href={value.Header_Link}>
@@ -61,7 +72,7 @@ export default function NavBar() {
                   </a>
                   <div className={Style.reactIcon}>
                     {value.Sub_Link.length > 0 ? (
-                      value.status ? (
+                      toggleArray[key] ? (
                         <IoIosArrowUp />
                       ) : (
                         <FiChevronDown />
@@ -72,7 +83,7 @@ export default function NavBar() {
                   </div>
                 </div>
                 <div className={Style.DropDownContainer}>
-                  {value.status && value.Sub_Link.length > 0 && (
+                  {toggleArray[key] && value.Sub_Link.length > 0 && (
                     <DropDown content={value.Sub_Link} />
                   )}
                 </div>

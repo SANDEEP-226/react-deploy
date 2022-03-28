@@ -177,12 +177,12 @@ hr {
 
 @media only screen and (max-width: 425px) {
   /* Small devices */
+  .HeadingText {
+    font-size: 15px;
+  }
   .rowTitle h2 {
     font-size: 1.5rem;
     color: #444444;
-  }
-  .HeadingText {
-    font-size: 15px;
   }
   .highlighterList ul li {
     font-size: 0.8rem;

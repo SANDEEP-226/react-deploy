@@ -1,6 +1,6 @@
 .container {
   width: 150px;
-  top: 75px;
+  top: 80px;
   font-size: 16px;
   line-height: 24px;
   padding: 12px 16px;
@@ -15,6 +15,9 @@
 .container ul {
   padding: 0px;
   margin: 0px;
+}
+a {
+  color: #8f8f8f;
 }
 .container ul li {
   width: 100%;
@@ -70,6 +73,7 @@
 @media only screen and (min-width: 400px) and (max-width: 500px) {
   /* Medium size devices */
   .container {
+    top: 30px;
     font-family: 'Poppins';
     font-style: normal;
     width: 100%;
@@ -84,6 +88,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    color: #777777;
   }
   .container ul li:hover {
     background-color: rgba(244, 118, 37, 0.1);

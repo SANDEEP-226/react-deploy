@@ -97,7 +97,7 @@
     line-height: 200.5%;
   }
 }
-@media only screen and (min-width: 399px) {
+@media only screen and (max-width: 399px) {
   .Heading {
     font-size: 15px;
   }

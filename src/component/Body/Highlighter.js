@@ -64,7 +64,7 @@ export default function Highlighter({ id, pageType, pageId }) {
 
                   toggle(key, toggleArray);
                 }}
-                className={toggleArray[key] ? Style.active : null}
+                className={toggleArray[key] && Style.active}
               >
                 {value.Tab_name}
               </li>

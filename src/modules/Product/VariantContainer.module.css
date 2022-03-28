@@ -23,7 +23,7 @@
 .ImageContaniner img {
   width: 219px;
   height: 219px;
-  /* margin: 10px; */
+  margin: 10px;
   /* background: #c4c4c4; */
   border-radius: 10px;
 }
@@ -147,6 +147,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  text-align: center;
   width: 90%;
   /* identical to box height */
   padding: 10px 10px;
