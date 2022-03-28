@@ -223,6 +223,10 @@ a {
     margin: 0px 20px;
     border-bottom: 1px solid #969696;
   }
+  /* .DropDownContainer:last-child */
+  .DropContentContainer:last-child {
+    border: 0px;
+  }
   .content {
     font-family: 'Poppins';
     font-style: normal;

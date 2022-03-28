@@ -111,7 +111,7 @@
   font-weight: 400;
   font-family: 'Poppins';
   color: #6f6f6f;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 16px 1rem 1rem 1rem;
   line-height: 1.5rem;
 }
 .TwoColumnContentContainer p {
@@ -401,10 +401,10 @@
     line-height: 157.5%;
   }
   .HeadingText {
-    font-size: 17px;
+    font-size: 19px;
   }
   .Description {
-    font-size: 12px;
+    font-size: 16px;
   }
   .readMore2 {
     font-weight: 400;
@@ -444,9 +444,10 @@
   .TwoColumnContentContainer {
     font-weight: 400;
     padding: 10px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 157.5%;
     color: #9c9c9c;
+    padding-top: 1rem;
   }
   .TwoColumnContentContainer ul {
     padding-left: 0.9rem;
@@ -509,7 +510,7 @@
     color: #444444;
   }
   .HeadingText {
-    font-size: 15px;
+    font-size: 16px;
   }
   .rowDesc {
     font-size: 0.9rem;
@@ -520,11 +521,15 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .Description {
+    font-size: 14px;
+  }
   .TwoColumn {
     width: 100%;
   }
   .TwoColumnContentContainer {
     padding: 0rem 0.6rem 0rem;
+    font-size: 16px;
   }
   .TwoColumnContentContainer ul {
     padding-left: 0.9rem;

@@ -138,6 +138,8 @@
   }
   .ck_btn {
     width: 250px;
+    padding: 10px 65px;
+    font-size: 17px;
     border-radius: 5px;
   }
 }

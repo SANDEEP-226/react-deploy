@@ -59,6 +59,10 @@
   align-items: center;
   justify-content: start;
   padding-left: 0px;
+  overflow-x: scroll;
+}
+.highlighterList ul::-webkit-scrollbar {
+  display: none;
 }
 hr {
   color: rgb(235, 235, 235);
@@ -156,26 +160,33 @@ hr {
     height: auto;
     max-width: 800px;
   }
-  .HeadingText {
-    font-size: 17px;
-  }
+
   .hr {
     width: 60px;
   }
+  .HeadingText {
+    font-size: 19px;
+  }
   .Description {
-    font-size: 12px;
+    font-size: 16px;
   }
   .rowTitle h2 {
     font-size: 1.3rem;
     color: #444444;
   }
+  .highlighterItems {
+    display: flex;
+    width: 350px;
+    flex-direction: row;
+  }
   .highlighterList ul li {
     font-size: 0.8rem;
     padding-right: 0.5rem;
+    text-align: center;
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 399px) {
   /* Small devices */
   .HeadingText {
     font-size: 15px;

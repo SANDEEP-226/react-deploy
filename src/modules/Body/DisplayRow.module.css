@@ -1,6 +1,6 @@
 .sectionContainer {
   width: 85% !important;
-  padding: 30px 30px;
+  /* padding: 30px 30px; */
   padding-bottom: 0;
   margin: 10px auto;
   width: 100%;
@@ -85,6 +85,17 @@
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
   .Heading {
+    font-size: 19px;
+  }
+  .Description {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .Heading {
+    font-size: 19px;
+  }
+  .Description {
     font-size: 17px;
   }
 }

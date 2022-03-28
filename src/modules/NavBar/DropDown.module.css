@@ -93,6 +93,9 @@ a {
   .container ul li:hover {
     background-color: rgba(244, 118, 37, 0.1);
   }
+  .container ul li :last-child {
+    border-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 399px) {
@@ -114,5 +117,8 @@ a {
   }
   .container ul li:hover {
     background-color: rgba(244, 118, 37, 0.1);
+  }
+  .container ul li :last-child {
+    border-bottom: 0px;
   }
 }

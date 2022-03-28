@@ -198,10 +198,10 @@
     justify-content: center;
   }
   .Description {
-    font-size: 12px;
+    font-size: 16px;
   }
   .Heading {
-    font-size: 17px;
+    font-size: 19px;
   }
   .wrapper {
     padding: 20px 0px;
@@ -216,7 +216,7 @@
     object-fit: cover;
   }
   .contentContainer {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4rem;
     /* padding: 0.75rem 0.75rem 0.75rem 0.75rem; */
   }
@@ -228,13 +228,13 @@
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 399px) {
   /* Small devices */
   .container {
     flex-direction: column;
   }
   .Heading {
-    font-size: 15px;
+    font-size: 17px;
   }
   .imageContainer img {
     width: 354px;
@@ -242,7 +242,7 @@
     object-fit: cover;
   }
   .contentContainer {
-    font-size: 0.68rem;
+    font-size: 15px;
     padding: 0.75rem 0.75rem 0rem;
     line-height: 1.3rem;
   }
